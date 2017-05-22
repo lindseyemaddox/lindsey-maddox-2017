@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "25813",
 "files": {
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
 	"\/_images\/logo-lindsey-maddox.png": {
 		"ft": 32768,
 		"iS": 44275,
