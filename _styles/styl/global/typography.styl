@@ -1,0 +1,45 @@
+
+$light = 300
+$regular = 400
+$bold = 700
+
+$base-font-size = 16px
+
+$performance-font = Arial, Helvetica, sans-serif
+
+$primary-font(w)
+  font-family: 'Quicksand', $performance-font
+  font-weight: (w)
+
+html
+  color: $white
+  font-size: $base-font-size
+  $primary-font($regular)
+
+.codepen
+  .icon-codepen:before
+    content: '\e900'
+
+.email
+  .icon-email:before
+    content: '\e901'
+
+.github
+  .icon-github:before
+    content: '\e902'
+
+.linkedin
+  .icon-linkedin:before
+    content: '\e903'
+
+.map
+  .icon-map:before
+    content: '\e904'
+
+.resume
+  .icon-resume:before
+    content: '\e905'
+
+.twitter
+  .icon-twitter:before
+    content: '\e906'
