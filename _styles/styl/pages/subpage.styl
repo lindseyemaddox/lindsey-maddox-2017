@@ -1,0 +1,134 @@
+
+.subpage
+
+  &.animate-bg
+    padding-top: 20px
+
+  header
+    margin: 20px 0 80px -35px
+
+    nav
+      float: left
+
+    a.logo
+      display: inline-block
+      margin: 0
+      vertical-align: top
+      width: 20px
+
+    p.home
+      $primary-font($light)
+      display: inline-block
+      font-size: 1.125em
+      letter-spacing: 0
+      line-height: 65px
+      padding: 0 10px
+      vertical-align: middle
+
+    ul
+      $primary-font($light)
+      display: inline-block
+      font-size: 1.125em
+      letter-spacing: 0
+      vertical-align: middle
+      width: auto
+
+      li
+        padding: 0 10px 0 0
+
+        &:before
+          color: $white
+          content: '/ '
+
+        a
+          padding-left: 10px
+
+    p.subhead,
+    hr
+      display: none
+
+  #socials
+    display: inline-block
+    vertical-align: -53px
+
+    a
+      font-size: 1em
+      padding: 0 15px
+
+  &.biopage
+
+    header nav ul li a.bio
+      font-weight: $bold
+
+  &.evidencepage
+
+    header nav ul li a.evidence
+      font-weight: $bold
+
+  &.proofpage
+
+    header nav ul li a.proof
+      font-weight: $bold
+
+  .columns
+    display: block
+    padding-bottom: 2em
+
+    &.two
+
+      .column
+        display: inline-block
+        width: 25%
+
+        .img
+          $backer($yellow)
+          margin-bottom: 30px
+
+          img
+            width: 100%
+
+        &.text
+          margin-left: 4%
+          vertical-align: top
+          width: 70%
+
+    &.three
+
+      p
+        $primary-font($regular)
+        font-size: 1em
+        line-height: 1.3em
+        text-transform: uppercase
+
+      .column
+        display: inline-block
+        margin-right: 4.5%
+        text-align: center
+        width: 30%
+
+        &:last-child
+          margin-right: 0
+
+    &.logo
+      margin-top: 30px
+
+      .column
+        display: inline-block
+        vertical-align: top
+        width: 15%
+
+        .img
+          margin-bottom: 20px
+          text-align: center
+
+          img
+            max-height: 110px
+            max-width: 100%
+
+        &.text
+          width: 80%
+          margin-left: 4.5%
+          vertical-align: middle
+
+  .button
+    $button(100%)

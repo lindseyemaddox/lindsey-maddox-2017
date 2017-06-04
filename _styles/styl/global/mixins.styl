@@ -1,3 +1,34 @@
 
 .border-radius(n)
   border-radius: n
+
+.transition(t)
+  transition: all t ease
+
+$backer(c)
+  position: relative
+  &:after
+    background-color: c
+    bottom: 0
+    content: ''
+    left: 0
+    position: absolute
+    top: 0
+    transform: rotate(3deg)
+    width: 100%
+    z-index: -1
+
+$button(w)
+  $primary-font($regular)
+  border-radius: 5px
+  background: radial-gradient(ellipse at center, #e2bd4d 0%, $yellow 100%)
+  color: $white
+  display: block
+  font-size: .8em
+  letter-spacing: 2px
+  line-height: 3em
+  margin: 20px 0
+  text-align: center
+  text-decoration: none
+  text-transform: uppercase
+  width: w

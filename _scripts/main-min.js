@@ -1,0 +1,1 @@
+function initVars(){$showSocials=$("#connect"),$socials=$("#socials")}function showSocials(){$showSocials.click(function(){return $socials.toggleClass("expanded"),!1})}function firstLoad(){initVars(),showSocials()}var $showSocials,$socials;$(function(){firstLoad()});

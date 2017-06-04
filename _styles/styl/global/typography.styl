@@ -16,30 +16,84 @@ html
   font-size: $base-font-size
   $primary-font($regular)
 
-.codepen
-  .icon-codepen:before
+.icon-codepen
+  &:before
     content: '\e900'
 
-.email
-  .icon-email:before
+.icon-email
+  &:before
     content: '\e901'
 
-.github
-  .icon-github:before
+.icon-github
+  &:before
     content: '\e902'
 
-.linkedin
-  .icon-linkedin:before
+.icon-linkedin
+  &:before
     content: '\e903'
 
-.map
-  .icon-map:before
+.icon-map
+  &:before
     content: '\e904'
 
-.resume
-  .icon-resume:before
+.icon-resume
+  &:before
     content: '\e905'
 
-.twitter
-  .icon-twitter:before
+.icon-twitter
+  &:before
     content: '\e906'
+
+p
+  $primary-font($regular)
+  color: $white
+  padding-bottom: 1em
+
+  &.intro
+    font-size: 1.5em
+    line-height: 1.5em
+    text-transform: uppercase
+
+    span
+      $primary-font($bold)
+
+  &.meat
+    font-size: 1em
+    line-height: 2em
+
+  &.subhead
+    $primary-font($bold)
+    font-size: 1.125em
+    letter-spacing: 4px
+    line-height: 1.3333333333333333em
+    padding: 2em 0
+    text-align: center
+    text-transform: uppercase
+
+  &.listblob
+    $primary-font($light)
+    font-size: 1.1875em
+    font-style: italic
+    line-height: 1.7368421052631577em
+    padding-bottom: 2em
+    text-align: center
+
+  &.line-item
+    font-size: 1em
+    line-height: 1.3em
+    text-align: center
+    text-transform: uppercase
+    &.last
+      padding-bottom: 2em
+
+  &.workplace
+    $primary-font($light)
+    font-size: 1.15em
+    line-height: 1.75em
+    letter-spacing: 5px
+    padding-bottom: 0
+    text-transform: uppercase
+
+  &.desc
+    font-size: 1em
+    line-height: 1.5em

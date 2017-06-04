@@ -15,6 +15,134 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/_images\/blank.gif": {
+		"ft": 4194304,
+		"iS": 43,
+		"oA": 0,
+		"oAP": "\/_images\/blank.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/_images\/extralarge\/bg.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/_images\/extralarge\/bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/extramedium\/bg.jpg": {
+		"ft": 16384,
+		"iS": 78731,
+		"oA": 0,
+		"oAP": "\/_images\/extramedium\/bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/fancybox_loading.gif": {
+		"ft": 4194304,
+		"iS": 6567,
+		"oA": 0,
+		"oAP": "\/_images\/fancybox_loading.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/_images\/fancybox_loading@2x.gif": {
+		"ft": 4194304,
+		"iS": 13984,
+		"oA": 0,
+		"oAP": "\/_images\/fancybox_loading@2x.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/_images\/fancybox_overlay.png": {
+		"ft": 32768,
+		"iS": 1003,
+		"oA": 0,
+		"oAP": "\/_images\/fancybox_overlay.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_images\/fancybox_sprite.png": {
+		"ft": 32768,
+		"iS": 1362,
+		"oA": 0,
+		"oAP": "\/_images\/fancybox_sprite.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_images\/fancybox_sprite@2x.png": {
+		"ft": 32768,
+		"iS": 6553,
+		"oA": 0,
+		"oAP": "\/_images\/fancybox_sprite@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_images\/large\/bg.jpg": {
+		"ft": 16384,
+		"iS": 109050,
+		"oA": 0,
+		"oAP": "\/_images\/large\/bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/lindseys.gif": {
+		"ft": 4194304,
+		"iS": 1346726,
+		"oA": 0,
+		"oAP": "\/_images\/lindseys.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/_images\/logo-bkon.png": {
+		"ft": 32768,
+		"iS": 41608,
+		"oA": 0,
+		"oAP": "\/_images\/logo-bkon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_images\/logo-cj.png": {
+		"ft": 32768,
+		"iS": 15659,
+		"oA": 0,
+		"oAP": "\/_images\/logo-cj.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_images\/logo-idesign.png": {
+		"ft": 32768,
+		"iS": 4358,
+		"oA": 0,
+		"oAP": "\/_images\/logo-idesign.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/_images\/logo-lindsey-maddox.png": {
 		"ft": 32768,
 		"iS": 44275,
@@ -26,11 +154,61 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/_images\/logo-readysetgo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/_images\/logo-readysetgo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/_images\/medium\/bg.jpg": {
+		"ft": 16384,
+		"iS": 30214,
+		"oA": 0,
+		"oAP": "\/_images\/medium\/bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/small\/bg.jpg": {
+		"ft": 16384,
+		"iS": 12322,
+		"oA": 0,
+		"oAP": "\/_images\/small\/bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_includes\/head.jade": {
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/_includes\/head.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/_includes\/lindsey-maddox.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_includes\/lindsey-maddox.pdf",
+		"oF": 0
+		},
+	"\/_includes\/map.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_includes\/map.html",
+		"oF": 0
+		},
+	"\/_includes\/map.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/_includes\/map.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -62,20 +240,38 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/_scripts\/fancybox-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_scripts\/fancybox-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/_scripts\/fancybox.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_scripts\/fancybox-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/_scripts\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_scripts\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/_scripts\/main.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/_scripts\/main-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/_scripts\/min\/main-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/_scripts\/min\/main-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -183,6 +379,45 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/_styles\/styl\/pages\/home.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/_styles\/styl\/pages\/overlay.styl": {
+		"aP": 1,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/_styles\/styl\/pages\/overlay.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/_styles\/styl\/pages\/subpage.styl": {
+		"aP": 1,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/_styles\/styl\/pages\/subpage.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/_styles\/styl\/plugs\/fancybox.styl": {
+		"aP": 1,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/_styles\/styl\/plugs\/fancybox.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -422,6 +657,20 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/bio.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bio.html",
+		"oF": 0
+		},
+	"\/bio.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/bio.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/browserconfig.xml": {
 		"ft": 8192,
 		"oA": 2,
@@ -473,7 +722,7 @@
 	"\/layout.jade": {
 		"cOD": 1,
 		"ft": 512,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/layout.html",
 		"oF": 0,
 		"oS": 0

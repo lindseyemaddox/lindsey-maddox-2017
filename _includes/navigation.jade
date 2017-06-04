@@ -3,44 +3,65 @@ header
 
   nav
   
+    a.logo(href='index.html')
+    
+      img(src='_images/logo-lindsey-maddox.png' alt='Lindsey Maddox logo')
+
+    p.home
+      a(href='index.html') Lindsey Maddo
+        span x
+
+    p.subhead 
+      span Makes 
+      span.switcher-case
+        span.switcher 
+          span Beautiful
+          span Responsive
+          span Fluid
+          span Kickass
+          span Pixel-Perfect
+      span Websites
+
     ul
     
+      hr
+        
       li
       
-        a.logo(href='/')
-        
-          img(src='_images/logo-lindsey-maddox.png' alt='Lindsey Maddox logo')
+        a.bio(href='bio.html') Bio
 
       li
       
-        a.home(href='/') Lindsey Maddox
-        
-      li
-        
-        p.subhead 
-          span Makes 
-          span.switcher-case
-            span.switcher 
-              span Awesome
-              span Responsive
-              span Fluid
-              span Kickass
-              span Amazing
-              span Pixel-Perfect
-          span Websites
+        a.evidence(href='/evidence') Evidence
         
       li
       
-        a(href='/evidence') Evidence
+        a.proof(href='/proof') Proof
+        
+      li
+      
+        a#connect Connect
 
-      li
+      hr
       
-        a(href='/bio') Bio
-        
-      li
-      
-        a(href='/proof') Proof
-        
-      li
-      
-        a.connect Connect
+  #socials
+  
+    a.icon-github(href='https://github.com/lindseyemaddox' target='_blank')
+
+    a.icon-resume(href='_includes/lindsey-maddox.pdf')
+
+    a.icon-linkedin(href='https://www.linkedin.com/in/lindseymaddox/' target='_blank')
+
+    a.icon-codepen(href='https://codepen.io/lindseyemaddox/#' target='_blank')
+
+    a.icon-twitter(href='https://twitter.com/lindseyemaddox' target='_blank')
+
+    a.icon-map.fancybox(class='fancybox.iframe' href='_includes/map.html')
+
+    a.icon-email(href='mailto:dev@lindseymaddox.com')
+
+
+script.
+  $(document).ready(function(){
+    $('.fancybox').fancybox();
+  });

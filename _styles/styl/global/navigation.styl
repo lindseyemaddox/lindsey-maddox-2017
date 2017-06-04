@@ -3,68 +3,120 @@ header
 
   nav
 
+    hr
+      border-top: 1px solid $white
+      background-color: transparent
+
+    a.logo
+      display: block
+      margin: 0 auto
+      width: 40px
+
+      img
+        width: 100%
+
+    p.home
+      $primary-font($regular)
+      font-size: 3em
+      letter-spacing: 0.25em
+      line-height: 2em
+      text-align: center
+      text-transform: uppercase
+
+      span
+        letter-spacing: 0.025em
+
+      a
+        color: $white
+        text-decoration: none
+
     ul
+      $primary-font($bold)
+      display: block
+      font-size: 1.15em
+      letter-spacing: 5px
+      margin: 30px auto
+      text-align: center
+      text-transform: uppercase
+      width: 600px
 
       li
+        display: inline-block
+        padding: 10px 20px
 
         a
           color: $white
-          display: block
-
-        a.logo
-          margin: 0 auto
-          width: 40px
-
-          img
-            width: 100%
-
-        a.home
-          $primary-font($regular)
-          font-size: 60px
-          letter-spacing: 0.25em
-          line-height: 2em
-          text-align: center
+          cursor: pointer
           text-decoration: none
-          text-transform: uppercase
+          transition: opacity 300ms ease
 
-  p.subhead span
-    display: inline-block
+          &:hover
+            opacity: 0.5
 
-span.switcher-case
-  margin: 6.25em auto
-  height: 2.6em
-  overflow: hidden
-  text-align: center
-  width: 100%
-
-  span.switcher
-    animation: TitleFlip 5s ease-in-out infinite
+  p.subhead
+    $primary-font($light)
+    color: $white
+    font-size: 1.95em
+    letter-spacing: 0.06em
+    line-height: 1em
+    text-align: center
+    text-transform: uppercase
 
     span
-      margin: 0px 0 1px 0
-      height: 1em !important
-      padding: 0px 0 0px 0
-      display: block
-      font-size: 3em
-      text-transform: uppercase
-      width: 100%
+      display: inline-block
 
-  @keyframes TitleFlip
-    0%,
-    20%
-      transform: translate(0px, -12.50em)
-    20%,
-    40%
-      transform: translate(0px, -9.375em)
-    40%,
-    60%
-      transform: translate(0px, -6.44em)
-    60%,
-    80%
-      transform: translate(0px, -3.44em)
-    80%
-    100%
-      transform: translate(0px, -0.315em)
-    100%,
-    0%
-      transform: translate(0px, -12.50em)
+span.switcher-case
+  color: $white
+  height: 1em
+  margin: 0 10px
+  overflow: hidden
+  text-align: center
+  vertical-align: -5px
+  width: auto
+
+  span.switcher
+    animation: switcher 8s ease-in-out infinite
+
+    span
+      height: 1em !important
+      display: block
+      font-size: 1em
+      line-height: 1em
+      padding: 0 10px
+      text-align: center
+      text-transform: uppercase
+      width: auto
+
+#socials
+  height: 0
+  overflow: hidden
+  text-align: center
+  transition: height 400ms ease-in
+
+  a
+    color: $white
+    display: inline-block
+    font-size: 2em
+    padding: 0 30px
+    text-decoration: none
+    transition: opacity 300ms ease
+
+    &:hover
+      opacity: 0.5
+
+  &.expanded
+    height: 36px
+
+
+@keyframes switcher
+  100%,
+  0%
+    transform: translate(0px, 0em)
+  20%
+    transform: translate(0px, -1em)
+  40%
+    transform: translate(0px, -2em)
+  60%
+    transform: translate(0px, -3em)
+  80%
+    transform: translate(0px, -4em)
