@@ -36,6 +36,10 @@ html
   &:before
     content: '\e904'
 
+.icon-quote
+  &:before
+    content: '\e907'
+
 .icon-resume
   &:before
     content: '\e905'
@@ -43,6 +47,9 @@ html
 .icon-twitter
   &:before
     content: '\e906'
+
+.nowrap
+  white-space: nowrap
 
 p
   $primary-font($regular)
@@ -97,3 +104,30 @@ p
   &.desc
     font-size: 1em
     line-height: 1.5em
+
+  &.quote
+    $primary-font($bold)
+    font-size: 1.5em
+    position: relative
+
+    &:before
+      content: '\e907'
+      display: block
+      font-family: icomoon
+      left: -1.75em
+      position: absolute
+      top: -0.25em
+      transform: rotate(180deg)
+
+  &.author
+    $primary-font($bold)
+    font-size: 1em
+    padding-bottom: 0.5em
+    text-align: right
+    text-transform: uppercase
+
+  &.affiliation
+    font-size: 0.8em
+    padding-bottom: 0
+    text-align: right
+    text-transform: uppercase

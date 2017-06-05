@@ -31,4 +31,9 @@ $button(w)
   text-align: center
   text-decoration: none
   text-transform: uppercase
+  transition: gradient 400ms ease-in
   width: w
+
+  &:hover
+    background: radial-gradient(ellipse at center, $yellow 0%, #e2bd4d 100%)
+    font-weight: $bold

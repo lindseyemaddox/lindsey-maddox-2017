@@ -102,13 +102,15 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/_images\/lindseys.gif": {
-		"ft": 4194304,
-		"iS": 1346726,
+	"\/_images\/lindsey-maddox.jpg": {
+		"ft": 16384,
+		"iS": 34367,
 		"oA": 0,
-		"oAP": "\/_images\/lindseys.gif",
+		"oAP": "\/_images\/lindsey-maddox.jpg",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/_images\/logo-bkon.png": {
 		"ft": 32768,
@@ -169,6 +171,66 @@
 		"iS": 30214,
 		"oA": 0,
 		"oAP": "\/_images\/medium\/bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/proof-andy.jpg": {
+		"ft": 16384,
+		"iS": 48598,
+		"oA": 0,
+		"oAP": "\/_images\/proof-andy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/proof-brian.jpg": {
+		"ft": 16384,
+		"iS": 30499,
+		"oA": 0,
+		"oAP": "\/_images\/proof-brian.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/proof-kyle.jpg": {
+		"ft": 16384,
+		"iS": 9891,
+		"oA": 0,
+		"oAP": "\/_images\/proof-kyle.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/proof-leslie.jpg": {
+		"ft": 16384,
+		"iS": 25159,
+		"oA": 0,
+		"oAP": "\/_images\/proof-leslie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/proof-rich.jpg": {
+		"ft": 16384,
+		"iS": 12333,
+		"oA": 0,
+		"oAP": "\/_images\/proof-rich.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/proof-terryl.jpg": {
+		"ft": 16384,
+		"iS": 21864,
+		"oA": 0,
+		"oAP": "\/_images\/proof-terryl.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -756,6 +818,20 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/proof.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/proof.html",
+		"oF": 0
+		},
+	"\/proof.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/proof.html",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/safari-pinned-tab.svg": {
 		"ft": 2097152,
