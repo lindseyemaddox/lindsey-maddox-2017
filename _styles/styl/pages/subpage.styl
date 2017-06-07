@@ -168,3 +168,88 @@
 
   .button
     $button(100%)
+
+
+  &.evidencepage
+
+    .button
+      background: transparent
+      border: none
+      width: auto !important
+      margin: 0 20px !important
+
+      &:hover
+        text-decoration: none
+
+      &:active,
+      &.is-checked
+        color: $blue
+
+      &.is-checked
+        color: $yellow
+
+    /* ---- button-group ---- */
+
+    .button-group
+      clear(both)
+      text-align: center
+
+      .button
+        display: inline-block
+        float: none
+        margin: 0 0 3px 0
+        width: 32.55%
+
+    .btn-row
+      clear(both)
+      margin: 1px auto 2px
+      text-align: center
+
+      .button
+        line-height: 1em
+        padding: 0.8em 16.9px
+        width: auto
+
+        &:after
+          content: ''
+          padding-left: 0
+
+
+    /* ---- isotope ---- */
+
+    .isotope-case
+      border: none
+      clear(both)
+      padding-bottom: 135px
+      position: relative
+
+      .inline
+        display: none
+
+    /* ---- .gallery-item ---- */
+
+    .gallery-item
+      clear(both)
+      position: relative
+      float: left
+      width: 19.5%
+      height: auto
+      margin: 1px
+      padding: 0
+      background: $black
+      color: $white
+
+      > *
+        margin: 0
+        padding: 0
+
+      picture,
+      video
+        width: 100%
+
+      img
+        width: 100%
+
+      .alpha,
+      .date
+        display: none

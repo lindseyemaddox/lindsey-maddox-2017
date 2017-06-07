@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lindsey Maddox Makes Websites</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=9BampWPmGp">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=9BampWPmGp">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=9BampWPmGp">
+    <link rel="manifest" href="/manifest.json?v=9BampWPmGp">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=9BampWPmGp" color="#d6a203">
+    <link rel="shortcut icon" href="/favicon.ico?v=9BampWPmGp">
+    <meta name="theme-color" content="#d6a203">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lindseyemaddox">
+    <meta name="twitter:creator" content="@lindseyemaddox">
+    <meta name="twitter:title" content="Lindsey Maddox Makes Websites">
+    <meta name="twitter:description" content="Lindsey Maddox is a top-performing web developer and graphic designer with a passion for creating beautiful, functional, fluidly responsive websites.">
+    <meta name="twitter:image:src" content="https://www.lindseymaddox.com/_includes/schema/twitter-card.jpg">
+    <meta property="og:title" content="Lindsey Maddox Makes Websites">
+    <meta property="og:url" content="https://www.lindseymaddox.com">
+    <meta property="og:image" content="https://www.lindseymaddox.com/_includes/schema/og-image.jpg">
+    <meta property="og:site_name" content="Lindsey Maddox Makes Websites">
+    <meta property="og:description" content="Lindsey Maddox is a top-performing web developer and graphic designer with a passion for creating beautiful, functional, fluidly responsive websites.">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700">
+    <link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/icomoon.io/12424/LindseyMaddox/style.css?a4cgnq">
+    <link rel="stylesheet" type="text/css" href="_styles/compiled.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="_scripts/fancybox-min.js"></script>
+    <script type="text/javascript" src="_scripts/main-min.js"></script>
+  </head>
+</html>
+<script type="text/javascript" src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.fancybox').fancybox();
+  
+    // init Isotope
+    var $grid = $('.grid').isotope({
+      itemSelector: '.gallery-item',
+      layoutMode: 'fitRows',
+      getSortData: {
+        alpha: '.alpha',
+        date: '.date parseInt',
+        weight: function( itemElem ) {
+          var weight = $( itemElem ).find('.date').text();
+          return parseFloat( weight.replace( /[\(\)]/g, '') );
+        }
+      }
+    });
+  
+    // filter functions
+    var filterFns = {
+      // show if number is greater than 50
+      numberGreaterThan50: function() {
+        var number = $(this).find('.number').text();
+        return parseInt( number, 10 ) > 50;
+      },
+      // show if name ends with -ium
+      ium: function() {
+        var name = $(this).find('.name').text();
+        return name.match( /ium$/ );
+      }
+    };
+  
+    // bind filter button click
+    $('#filters').on( 'click', 'button', function() {
+      var filterValue = $( this ).attr('data-filter');
+      // use filterFn if matches value
+      filterValue = filterFns[ filterValue ] || filterValue;
+      $grid.isotope({ filter: filterValue });
+    });
+  
+    // bind sort button click
+    $('#sorts').on( 'click', 'button', function() {
+      var sortByValue = $(this).attr('data-sort-by');
+      $grid.isotope({ sortBy: sortByValue });
+    });
+  
+    // change is-checked class on buttons
+    $('.button-group').each( function( i, buttonGroup ) {
+      var $buttonGroup = $( buttonGroup );
+      $buttonGroup.on( 'click', 'button', function() {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $( this ).addClass('is-checked');
+      });
+    });
+  });
+  
+</script>
+<body class="animate-bg subpage evidencepage">
+  <div class="grid">
+    <header>
+      <nav><a href="index.html" class="logo"><img src="_images/logo-lindsey-maddox.png" alt="Lindsey Maddox logo"></a>
+        <p class="home"><a href="index.html">Lindsey Maddo<span>x</span></a></p>
+        <p class="subhead"> <span>Makes </span><span class="switcher-case"><span class="switcher"> <span>Beautiful</span><span>Responsive</span><span>Fluid</span><span>Kickass</span><span>Pixel-Perfect</span></span></span><span>Websites</span></p>
+        <ul>
+          <hr>
+          <li><a href="bio.html" class="bio">Bio</a></li>
+          <li><a href="evidence.html" class="evidence">Evidence</a></li>
+          <li><a href="proof.html" class="proof">Proof</a></li>
+          <li><a id="connect">Connect</a></li>
+          <hr>
+        </ul>
+      </nav>
+      <div id="socials"><a href="https://github.com/lindseyemaddox" target="_blank" class="icon-github"></a><a href="_includes/lindsey-maddox.pdf" class="icon-resume"></a><a href="https://www.linkedin.com/in/lindseymaddox/" target="_blank" class="icon-linkedin"></a><a href="https://codepen.io/lindseyemaddox/#" target="_blank" class="icon-codepen"></a><a href="https://twitter.com/lindseyemaddox" target="_blank" class="icon-twitter"></a><a href="_includes/map.html" class="icon-map fancybox fancybox.iframe"></a><a href="mailto:dev@lindseymaddox.com" class="icon-email"></a></div>
+    </header>
+    <script>
+      $(document).ready(function(){
+        $('.fancybox').fancybox();
+      });
+    </script>
+    <div id="filters" class="button-group">
+      <button data-filter="*" class="button is-checked">All</button>
+      <button data-filter=".design" class="button">Design</button>
+      <button data-filter=".development" class="button">Development</button>
+      <button data-filter=".web" class="button">Web</button>
+      <button data-filter=".print" class="button">Print</button>
+      <button data-filter=".branding" class="button">Branding</button>
+    </div>
+    <div class="isotope-case">
+      <div class="gallery-item photo"><a href="#p141016" title="Fish Held by Tail Under Water" rel="photo" class="fancybox fancybox"><img src="_images/small/141016.jpg" alt="Fish Held by Tail Under Water">
+          <h3 class="alpha">Fish Held by Tail Under Water</h3>
+          <p class="date">141016</p></a>
+        <div id="p141016" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/141016.jpg, _images/extralarge/141016.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/141016.jpg, _images/extramedium/141016.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/141016.jpg, _images/medium/141016.jpg 2x" alt="Fish Held by Tail Under Water">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

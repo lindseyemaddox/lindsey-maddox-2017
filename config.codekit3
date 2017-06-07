@@ -134,6 +134,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/_images\/logo-dykes.png": {
+		"ft": 32768,
+		"iS": 28966,
+		"oA": 0,
+		"oAP": "\/_images\/logo-dykes.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/_images\/logo-idesign.png": {
 		"ft": 32768,
 		"iS": 4358,
@@ -236,11 +247,281 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_images\/rect-aids.jpg": {
+		"ft": 16384,
+		"iS": 26601,
+		"oA": 0,
+		"oAP": "\/_images\/rect-aids.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/rect-cirrus.jpg": {
+		"ft": 16384,
+		"iS": 43676,
+		"oA": 0,
+		"oAP": "\/_images\/rect-cirrus.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/rect-specialolympics.jpg": {
+		"ft": 16384,
+		"iS": 34319,
+		"oA": 0,
+		"oAP": "\/_images\/rect-specialolympics.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/rect-travismeadows.jpg": {
+		"ft": 16384,
+		"iS": 24872,
+		"oA": 0,
+		"oAP": "\/_images\/rect-travismeadows.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/rect-watkins.jpg": {
+		"ft": 16384,
+		"iS": 12734,
+		"oA": 0,
+		"oAP": "\/_images\/rect-watkins.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/_images\/small\/bg.jpg": {
 		"ft": 16384,
 		"iS": 12322,
 		"oA": 0,
 		"oAP": "\/_images\/small\/bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/square-angryeagle.jpg": {
+		"ft": 16384,
+		"iS": 16412,
+		"oA": 0,
+		"oAP": "\/_images\/square-angryeagle.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/square-bkon.jpg": {
+		"ft": 16384,
+		"iS": 11039,
+		"oA": 0,
+		"oAP": "\/_images\/square-bkon.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/square-connico.jpg": {
+		"ft": 16384,
+		"iS": 17135,
+		"oA": 0,
+		"oAP": "\/_images\/square-connico.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/square-fasterfitness.jpg": {
+		"ft": 16384,
+		"iS": 8139,
+		"oA": 0,
+		"oAP": "\/_images\/square-fasterfitness.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/square-inquicker.jpg": {
+		"ft": 16384,
+		"iS": 8481,
+		"oA": 0,
+		"oAP": "\/_images\/square-inquicker.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/square-kenricks.jpg": {
+		"ft": 16384,
+		"iS": 23484,
+		"oA": 0,
+		"oAP": "\/_images\/square-kenricks.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/square-longhaul.jpg": {
+		"ft": 16384,
+		"iS": 10888,
+		"oA": 0,
+		"oAP": "\/_images\/square-longhaul.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/square-neighborhoodhealth.jpg": {
+		"ft": 16384,
+		"iS": 7293,
+		"oA": 0,
+		"oAP": "\/_images\/square-neighborhoodhealth.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/square-oceano.jpg": {
+		"ft": 16384,
+		"iS": 21699,
+		"oA": 0,
+		"oAP": "\/_images\/square-oceano.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/square-peg.jpg": {
+		"ft": 16384,
+		"iS": 13538,
+		"oA": 0,
+		"oAP": "\/_images\/square-peg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/square-precision.jpg": {
+		"ft": 16384,
+		"iS": 15503,
+		"oA": 0,
+		"oAP": "\/_images\/square-precision.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/square-readysetgo.jpg": {
+		"ft": 16384,
+		"iS": 7403,
+		"oA": 0,
+		"oAP": "\/_images\/square-readysetgo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/square-sef.jpg": {
+		"ft": 16384,
+		"iS": 12415,
+		"oA": 0,
+		"oAP": "\/_images\/square-sef.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/square-skulls.jpg": {
+		"ft": 16384,
+		"iS": 14726,
+		"oA": 0,
+		"oAP": "\/_images\/square-skulls.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/square-sounds.jpg": {
+		"ft": 16384,
+		"iS": 15387,
+		"oA": 0,
+		"oAP": "\/_images\/square-sounds.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/square-symphony.jpg": {
+		"ft": 16384,
+		"iS": 15957,
+		"oA": 0,
+		"oAP": "\/_images\/square-symphony.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/tall-ccm.jpg": {
+		"ft": 16384,
+		"iS": 42413,
+		"oA": 0,
+		"oAP": "\/_images\/tall-ccm.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/tall-coffeelunch.jpg": {
+		"ft": 16384,
+		"iS": 31988,
+		"oA": 0,
+		"oAP": "\/_images\/tall-coffeelunch.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/tall-inquicker.jpg": {
+		"ft": 16384,
+		"iS": 37688,
+		"oA": 0,
+		"oAP": "\/_images\/tall-inquicker.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/tall-martha.jpg": {
+		"ft": 16384,
+		"iS": 18351,
+		"oA": 0,
+		"oAP": "\/_images\/tall-martha.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/tall-tsu.jpg": {
+		"ft": 16384,
+		"iS": 37527,
+		"oA": 0,
+		"oAP": "\/_images\/tall-tsu.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/tall-tuba.jpg": {
+		"ft": 16384,
+		"iS": 18154,
+		"oA": 0,
+		"oAP": "\/_images\/tall-tuba.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -480,6 +761,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/_styles\/styl\/plugs\/fancybox.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/_styles\/styl\/plugs\/picturefill.styl": {
+		"aP": 1,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/_styles\/styl\/plugs\/picturefill.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -738,6 +1032,20 @@
 		"oA": 2,
 		"oAP": "\/browserconfig.xml",
 		"oF": 0
+		},
+	"\/evidence.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/evidence.html",
+		"oF": 0
+		},
+	"\/evidence.jade": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/evidence.html",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/favicon-16x16.png": {
 		"ft": 32768,

@@ -798,6 +798,77 @@ iframe {
   background: radial-gradient(ellipse at center, #d6a203 0%, #e2bd4d 100%);
   font-weight: 700;
 }
+.subpage.evidencepage .button {
+  background: transparent;
+  border: none;
+  width: auto !important;
+  margin: 0 20px !important;
+}
+.subpage.evidencepage .button:hover {
+  text-decoration: none;
+}
+.subpage.evidencepage .button:active,
+.subpage.evidencepage .button.is-checked {
+  color: #21b8b6;
+}
+.subpage.evidencepage .button.is-checked {
+  color: #d6a203;
+}
+.subpage.evidencepage .button-group {
+  text-align: center;
+}
+.subpage.evidencepage .button-group .button {
+  display: inline-block;
+  float: none;
+  margin: 0 0 3px 0;
+  width: 32.55%;
+}
+.subpage.evidencepage .btn-row {
+  margin: 1px auto 2px;
+  text-align: center;
+}
+.subpage.evidencepage .btn-row .button {
+  line-height: 1em;
+  padding: 0.8em 16.9px;
+  width: auto;
+}
+.subpage.evidencepage .btn-row .button:after {
+  content: '';
+  padding-left: 0;
+}
+.subpage.evidencepage .isotope-case {
+  border: none;
+  padding-bottom: 135px;
+  position: relative;
+}
+.subpage.evidencepage .isotope-case .inline {
+  display: none;
+}
+.subpage.evidencepage .gallery-item {
+  position: relative;
+  float: left;
+  width: 19.5%;
+  height: auto;
+  margin: 1px;
+  padding: 0;
+  background: $black;
+  color: #fff;
+}
+.subpage.evidencepage .gallery-item > * {
+  margin: 0;
+  padding: 0;
+}
+.subpage.evidencepage .gallery-item picture,
+.subpage.evidencepage .gallery-item video {
+  width: 100%;
+}
+.subpage.evidencepage .gallery-item img {
+  width: 100%;
+}
+.subpage.evidencepage .gallery-item .alpha,
+.subpage.evidencepage .gallery-item .date {
+  display: none;
+}
 /* fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap,
 .fancybox-skin,

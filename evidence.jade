@@ -1,0 +1,97 @@
+
+include _includes/head
+
+script(type='text/javascript' src='https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js')
+
+script(type='text/javascript').
+  $(document).ready(function() {
+    $('.fancybox').fancybox();
+
+    // init Isotope
+    var $grid = $('.grid').isotope({
+      itemSelector: '.gallery-item',
+      layoutMode: 'fitRows',
+      getSortData: {
+        alpha: '.alpha',
+        date: '.date parseInt',
+        weight: function( itemElem ) {
+          var weight = $( itemElem ).find('.date').text();
+          return parseFloat( weight.replace( /[\(\)]/g, '') );
+        }
+      }
+    });
+
+    // filter functions
+    var filterFns = {
+      // show if number is greater than 50
+      numberGreaterThan50: function() {
+        var number = $(this).find('.number').text();
+        return parseInt( number, 10 ) > 50;
+      },
+      // show if name ends with -ium
+      ium: function() {
+        var name = $(this).find('.name').text();
+        return name.match( /ium$/ );
+      }
+    };
+
+    // bind filter button click
+    $('#filters').on( 'click', 'button', function() {
+      var filterValue = $( this ).attr('data-filter');
+      // use filterFn if matches value
+      filterValue = filterFns[ filterValue ] || filterValue;
+      $grid.isotope({ filter: filterValue });
+    });
+
+    // bind sort button click
+    $('#sorts').on( 'click', 'button', function() {
+      var sortByValue = $(this).attr('data-sort-by');
+      $grid.isotope({ sortBy: sortByValue });
+    });
+
+    // change is-checked class on buttons
+    $('.button-group').each( function( i, buttonGroup ) {
+      var $buttonGroup = $( buttonGroup );
+      $buttonGroup.on( 'click', 'button', function() {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $( this ).addClass('is-checked');
+      });
+    });
+  });
+  
+body.animate-bg.subpage.evidencepage
+
+  .grid
+
+    block content
+
+      include _includes/navigation
+
+      #filters.button-group
+        button.button.is-checked(data-filter='*') All
+        button.button(data-filter='.design') Design
+        button.button(data-filter='.development') Development
+        button.button(data-filter='.web') Web
+        button.button(data-filter='.print') Print
+        button.button(data-filter='.branding') Branding
+        
+      //- #sorts.button-group
+      //-   button.button.is-checked(data-sort-by='original-order') original order
+      //-   button.button(data-sort-by='date') Chronological
+      //-   button.button(data-sort-by='alpha') Alphabetical
+        
+      .isotope-case
+      
+        .gallery-item.photo
+          a.fancybox(class='fancybox' href='#p141016' title='Fish Held by Tail Under Water' rel='photo')
+            img(src='_images/small/141016.jpg' alt='Fish Held by Tail Under Water')
+            h3.alpha Fish Held by Tail Under Water
+            p.date 141016
+
+          #p141016.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/141016.jpg, _images/extralarge/141016.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/141016.jpg, _images/extramedium/141016.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/141016.jpg, _images/medium/141016.jpg 2x' alt='Fish Held by Tail Under Water')
