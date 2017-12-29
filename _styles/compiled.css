@@ -1150,4 +1150,41 @@ iframe {
     font-size: 1.5em;
   }
 }
+@media screen and (max-width: 600px) {
+  header nav p.home {
+    font-size: 2.5em;
+  }
+  header nav p.subhead {
+    font-size: 1.56em;
+  }
+  header nav ul li {
+    display: block;
+    padding: 20px;
+  }
+  #socials a {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header nav p.home {
+    font-size: 2em;
+  }
+  header nav p.subhead {
+    font-size: 1.22em;
+  }
+  #socials a {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  header nav p.home {
+    font-size: 1.5em;
+  }
+  header nav p.subhead {
+    font-size: 0.88em;
+  }
+  #socials a {
+    padding: 0 10px;
+  }
+}
 /*# sourceMappingURL=compiled.css.map */
