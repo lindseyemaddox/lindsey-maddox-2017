@@ -37,16 +37,11 @@
     $('.fancybox').fancybox();
   
     // init Isotope
-    var $grid = $('.grid').isotope({
+    var $grid = $('.isotope-case').isotope({
       itemSelector: '.gallery-item',
-      layoutMode: 'fitRows',
-      getSortData: {
-        alpha: '.alpha',
-        date: '.date parseInt',
-        weight: function( itemElem ) {
-          var weight = $( itemElem ).find('.date').text();
-          return parseFloat( weight.replace( /[\(\)]/g, '') );
-        }
+      percentPosition: true,
+      masonry: {
+        columnWidth: '.grid-sizer'
       }
     });
   
@@ -70,12 +65,6 @@
       // use filterFn if matches value
       filterValue = filterFns[ filterValue ] || filterValue;
       $grid.isotope({ filter: filterValue });
-    });
-  
-    // bind sort button click
-    $('#sorts').on( 'click', 'button', function() {
-      var sortByValue = $(this).attr('data-sort-by');
-      $grid.isotope({ sortBy: sortByValue });
     });
   
     // change is-checked class on buttons
@@ -120,14 +109,417 @@
       <button data-filter=".branding" class="button">Branding</button>
     </div>
     <div class="isotope-case">
-      <div class="gallery-item photo"><a href="#p141016" title="Fish Held by Tail Under Water" rel="photo" class="fancybox fancybox"><img src="_images/small/141016.jpg" alt="Fish Held by Tail Under Water">
-          <h3 class="alpha">Fish Held by Tail Under Water</h3>
-          <p class="date">141016</p></a>
-        <div id="p141016" class="inline">
+      <div class="grid-sizer gallery-item design development web print branding"><a href="#angryeagle" class="fancybox fancybox"><img src="_images/square-angryeagle.jpg" alt="Angry Eagle logo crop">
+          <h3 class="title">Angry Eagle Lodge & Outfitters</h3><span class="button">Details</span></a>
+        <div id="angryeagle" class="inline">
           <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
-            <source srcset="_images/large/141016.jpg, _images/extralarge/141016.jpg 2x" media="(min-width: 2500px)">
-            <source srcset="_images/medium/141016.jpg, _images/extramedium/141016.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/141016.jpg, _images/medium/141016.jpg 2x" alt="Fish Held by Tail Under Water">
+            <source srcset="_images/large/angryeagle.jpg, _images/extralarge/angryeagle.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/angryeagle.jpg, _images/extramedium/angryeagle.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/angryeagle.jpg, _images/medium/angryeagle.jpg 2x" alt="Angry Eagle Lodge &amp; Outfitters">
           </picture>
+          <div class="info">
+            <h3 class="title">Angry Eagle <span class="nobreak">Lodge & Outfitters</span></h3>
+            <p class="items">Logo Design</p>
+            <p class="items">Print Collateral Design</p>
+            <p class="items">Email Design</p>
+            <p class="items">Website Design</p>
+            <p class="items">Website Development</p>
+            <p class="details">Completed during tenure at Catalog Music Company. </p><a href="http://www.angryeagle.com" target="_blank" class="button">Visit Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item rect web development"><a href="#specialolympics" class="fancybox fancybox"><img src="_images/rect-specialolympics.jpg" alt="Special Olympics">
+          <h3 class="title">Special Olympics</h3><span class="button">Details</span></a>
+        <div id="specialolympics" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/specialolympics.jpg, _images/extralarge/specialolympics.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/specialolympics.jpg, _images/extramedium/specialolympics.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/specialolympics.jpg, _images/medium/specialolympics.jpg 2x" alt="Special Olympics">
+          </picture>
+          <div class="info">
+            <h3 class="title">Special Olympics TN</h3>
+            <p class="items">Website Development</p>
+            <p class="details">Integrated with an in-house Content Management System, I was able to make responsive planning choices during the build of this site.</p><a href="http://specialolympicstn.org/" target="_blank" class="button">Visit Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item tall web design development branding"><a href="#tuba" class="fancybox fancybox"><img src="_images/tall-tuba.jpg" alt="Tennessee Technological University R. Winston Morris Tuba Collection Museum">
+          <h3 class="title">Tennessee Technological University <span class="nobreak">R. Winston </span>Morris Tuba Collection Museum</h3><span class="button">Details</span></a>
+        <div id="tuba" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/tuba.jpg, _images/extralarge/tuba.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/tuba.jpg, _images/extramedium/tuba.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/tuba.jpg, _images/medium/tuba.jpg 2x" alt="Tennessee Technological University R. Winston Morris Tuba Collection Museum">
+          </picture>
+          <div class="info">
+            <h3 class="title">Tennessee Technological University R. Winston Morris Tuba Collection Museum</h3>
+            <p class="items">Web Application Design</p>
+            <p class="items">Web Application Development</p>
+            <p class="details">Powered by the Physical Web, this app was designed to connect the collection database to the physical museum experience. </p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item web development"><a href="#bkon" title="BKON Connect Website and Beacon Management Application" rel="web" class="fancybox fancybox"><img src="_images/square-bkon.jpg" alt="BKON Connect Website">
+          <h3 class="title">BKON Connect</h3><span class="button">Details</span></a>
+        <div id="bkon" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/bkon.jpg, _images/extralarge/bkon.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/bkon.jpg, _images/extramedium/bkon.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/bkon.jpg, _images/medium/bkon.jpg 2x" alt="BKON Connect Website">
+          </picture>
+          <div class="info">
+            <h3 class="title">BKON Connect</h3>
+            <p class="items">Web Application Development</p>
+            <p class="details">BKON Connect is a Customer Directed Engagement Platform that develops software and hardware tools which can turn any mobile app into a browser for the Internet of Things, allowing people to join digital experiences in physical spaces – any content, activity, app, location, touchpoint anywhere.</p>
+            <p class="details">BKON’s new PHY platform enables apps with “touchpoint browsing,” which lets people browse digital touchpoints in a physical place, see a quick preview of the content and control whether to select the content. PHY is an enterprise class, end-to-end platform that manages all types of digital touchpoints, including Physical Web beacons, QR codes, and NFC tags. PHY lets retailers, galleries and venues of all types quickly and easily change content across multiple locations and for multiple audiences, driving the ultimate proximity customer engagement and interaction.</p><a href="https://www.bkon.com" target="_blank" class="button">Visit Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item tall design print"><a href="#kitty" title="Country Music Greats Catalog" rel="print" class="fancybox fancybox"><img src="_images/tall-ccm.jpg" alt="Country Music Greats Catalog">
+          <h3 class="title">Country Music Greats Catalog</h3><span class="button">Details</span></a>
+        <div id="kitty" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/kitty.jpg, _images/extralarge/kitty.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/kitty.jpg, _images/extramedium/kitty.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/kitty.jpg, _images/medium/kitty.jpg 2x" alt="Country Music Greats Catalog">
+          </picture>
+          <div class="info">
+            <h3 class="title">Country Music Greats Catalog</h3>
+            <p class="items">Print Collateral Design</p>
+            <p class="details">Completed during tenure at Catalog Music Company. </p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item design web"><a href="#fasterfitness" title="Faster Fitness Website" rel="web" class="fancybox fancybox"><img src="_images/square-fasterfitness.jpg" alt="Faster Fitness Website">
+          <h3 class="title">Faster Fitness</h3><span class="button">Details</span></a>
+        <div id="fasterfitness" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/fasterfitness.jpg, _images/extralarge/fasterfitness.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/fasterfitness.jpg, _images/extramedium/fasterfitness.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/fasterfitness.jpg, _images/medium/fasterfitness.jpg 2x" alt="Faster Fitness Website">
+          </picture>
+          <div class="info">
+            <h3 class="title">Faster Fitness</h3>
+            <p class="items">Website Design</p>
+            <p class="details">Completed during tenure at Drive Social Media. </p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item design web development branding"><a href="#precision" title="Precision Metalwork Website and Branding" rel="web" class="fancybox fancybox"><img src="_images/square-precision.jpg" alt="Precision Metalwork Website">
+          <h3 class="title">Precision Metalwork</h3><span class="button">Details</span></a>
+        <div id="precision" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/precision.jpg, _images/extralarge/precision.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/precision.jpg, _images/extramedium/precision.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/precision.jpg, _images/medium/precision.jpg 2x" alt="Precision Metalwork Website">
+          </picture>
+          <div class="info">
+            <h3 class="title">Precision Metalwork</h3>
+            <p class="items">Logo Design</p>
+            <p class="items">Website Design</p>
+            <p class="items">Website Development</p>
+            <p class="details">Definitely a favorite project for an awesome client. This static site was built fluidly responsive, working with a logo developer and a content specialist. The content specialist did a great job of writing varied content, allowing me to design lots of variety in layouts. Performing well, this site does a great job of eye leading and lead generation. </p><a href="http://precisionmetalwork.com/" target="_blank" class="button">Visit Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item tall design web development branding print"><a href="#coffeelunch" title="Coffee, Lunch. Website and Branding" rel="web" class="fancybox fancybox"><img src="_images/tall-coffeelunch.jpg" alt="Coffee, Lunch. Website">
+          <h3 class="title">Coffee, Lunch.</h3><span class="button">Details</span></a>
+        <div id="coffeelunch" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/coffeelunch.jpg, _images/extralarge/coffeelunch.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/coffeelunch.jpg, _images/extramedium/coffeelunch.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/coffeelunch.jpg, _images/medium/coffeelunch.jpg 2x" alt="Coffee, Lunch. Website">
+          </picture>
+          <div class="info">
+            <h3 class="title">Coffee, Lunch. </h3>
+            <p class="items">Print Collateral Design</p>
+            <p class="items">Email Design</p>
+            <p class="items">Website Design</p>
+            <p class="items">Website Development</p>
+            <p class="details">Completed for a now-closed daytime restaurant downtown called, Coffee, Lunch. </p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item web design"><a href="#kenricks" title="Kenrick's Website Design" rel="web" class="fancybox fancybox"><img src="_images/square-kenricks.jpg" alt="Kenrick's Website">
+          <h3 class="title">Kenrick's</h3><span class="button">Details</span></a>
+        <div id="kenricks" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/kenricks.jpg, _images/extralarge/kenricks.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/kenricks.jpg, _images/extramedium/kenricks.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/kenricks.jpg, _images/medium/kenricks.jpg 2x" alt="Kenrick's Website">
+          </picture>
+          <div class="info">
+            <h3 class="title">Kenrick's Meats</h3>
+            <p class="items">Website Design</p>
+            <p class="details">Meat retailer website design completed during tenure at Drive Social Media. </p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item design web"><a href="#oceano" title="Oceano Website" rel="design" class="fancybox fancybox"><img src="_images/square-oceano.jpg" alt="Oceano Website">
+          <h3 class="title">Oceano</h3><span class="button">Details</span></a>
+        <div id="oceano" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/oceano.jpg, _images/extralarge/oceano.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/oceano.jpg, _images/extramedium/oceano.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/oceano.jpg, _images/medium/oceano.jpg 2x" alt="Oceano Website">
+          </picture>
+          <div class="info">
+            <h3 class="title">Oceano</h3>
+            <p class="items">Website Design</p>
+            <p class="details">Restaurant website design completed during tenure at Drive Social Media. </p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item rect print design"><a href="#watkins" title="Watkins College of Art, Design &amp; Film Poster" rel="web" class="fancybox fancybox"><img src="_images/rect-watkins.jpg" alt="Watkins College of Art, Design &amp; Film">
+          <h3 class="title">Watkins College <span class="nobreak">of Art, </span><span class="nobreak">Design & Film</span></h3><span class="button">Details</span></a>
+        <div id="watkins" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/watkins.jpg, _images/extralarge/watkins.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/watkins.jpg, _images/extramedium/watkins.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/watkins.jpg, _images/medium/watkins.jpg 2x" alt="Watkins College of Art, Design &amp; Film">
+          </picture>
+          <div class="info">
+            <h3 class="title">Watkins College <span class="nobreak">of Art, </span><span class="nobreak">Design & Film</span></h3>
+            <p class="items">Print Collateral Design</p>
+            <p class="details">Poster and accompanying pring and giveaway items completed for the 2006 Graphic Design Senior Show at Watkins College of Art, Design, and Film. </p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item web design development"><a href="#sounds" title="Nashville Sounds Food Finder App" rel="web" class="fancybox fancybox"><img src="_images/square-sounds.jpg" alt="Nashville Sounds">
+          <h3 class="title">Nashville Sounds</h3><span class="button">Details</span></a>
+        <div id="sounds" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/sounds.jpg, _images/extralarge/sounds.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/sounds.jpg, _images/extramedium/sounds.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/sounds.jpg, _images/medium/sounds.jpg 2x" alt="Nashville Sounds">
+          </picture>
+          <div class="info">
+            <h3 class="title">Nashville Sounds Gameday Food Finder App</h3>
+            <p class="items">Website Design</p>
+            <p class="items">Website Development</p>
+            <p class="details">Completed for BKON Connect as part of a "first ballpark on the Physical Web" project in 2016, this beer-drinking, pretzel-eater's paradise helps baseball game goers find the exact cheesy dipping sauce their heart desires. </p><a href="http://foodbeacon.com/" target="_blank" class="button">Visit Application</a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item rect print design"><a href="#cirrus" title="Cirrus Outdoor Power Equipment Branding and Signage" rel="web" class="fancybox fancybox"><img src="_images/rect-cirrus.jpg" alt="Cirrus Outdoor Power Equipment">
+          <h3 class="title">Cirrus Outdoor Power Equipment</h3><span class="button">Details</span></a>
+        <div id="cirrus" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/cirrus.jpg, _images/extralarge/cirrus.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/cirrus.jpg, _images/extramedium/cirrus.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/cirrus.jpg, _images/medium/cirrus.jpg 2x" alt="Cirrus Outdoor Power Equipment">
+          </picture>
+          <div class="info">
+            <h3 class="title">Cirrus Outdoor Power Equipment</h3>
+            <p class="items">Logo Design</p>
+            <p class="items">Print Collateral Design</p>
+            <p class="items">Indoor/Outdoor Signage Design</p>
+            <p class="items">Website Design</p>
+            <p class="items">Website Development</p>
+            <p class="details">Logo designed in 2004. </p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item web design"><a href="#skulls" title="Skull's Rainbow Room Website" rel="web" class="fancybox fancybox"><img src="_images/square-skulls.jpg" alt="Skull's Rainbow Room">
+          <h3 class="title">Skull's Rainbow Room</h3><span class="button">Details</span></a>
+        <div id="skulls" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/skulls.jpg, _images/extralarge/skulls.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/skulls.jpg, _images/extramedium/skulls.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/skulls.jpg, _images/medium/skulls.jpg 2x" alt="Skull's Rainbow Room">
+          </picture>
+          <div class="info">
+            <h3 class="title">Skull's Rainbow Room</h3>
+            <p class="items">Website Design</p>
+            <p class="details">Completed during tenure at Drive Social Media. </p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item web development"><a href="#connico" title="Connico Website Development" rel="web" class="fancybox fancybox"><img src="_images/square-connico.jpg" alt="Connico">
+          <h3 class="title">Connico</h3><span class="button">Details</span></a>
+        <div id="connico" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/connico.jpg, _images/extralarge/connico.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/connico.jpg, _images/extramedium/connico.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/connico.jpg, _images/medium/connico.jpg 2x" alt="Connico">
+          </picture>
+          <div class="info">
+            <h3 class="title">Connico, Incorporated</h3>
+            <p class="items">Website Development</p>
+            <p class="details">Non-responsive website (client specification) completed during tenure at iDesign. </p><a href="http://www.connico.com/" target="_blank" class="button">Visit Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item rect print design"><a href="#travis" title="Travis Meadows Record Design" rel="web" class="fancybox fancybox"><img src="_images/rect-travismeadows.jpg" alt="Travis Meadows">
+          <h3 class="title">Travis Meadows</h3><span class="button">Details</span></a>
+        <div id="travis" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/travis.jpg, _images/extralarge/travis.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/travis.jpg, _images/extramedium/travis.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/travis.jpg, _images/medium/travis.jpg 2x" alt="Travis Meadows">
+          </picture>
+          <div class="info">
+            <h3 class="title">Travis Meadows</h3>
+            <p class="items">Print Collateral Design</p>
+            <p class="details">Full-size record cover and insert design for Nashville Singer/Songwriter Travis Meadows. </p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item web development"><a href="#neighborhood" title="Neighborhood Health Website Development" rel="web" class="fancybox fancybox"><img src="_images/square-neighborhoodhealth.jpg" alt="Neighborhood Health">
+          <h3 class="title">Neighborhood Health</h3><span class="button">Details</span></a>
+        <div id="neighborhood" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/neighborhoodhealth.jpg, _images/extralarge/neighborhoodhealth.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/neighborhoodhealth.jpg, _images/extramedium/neighborhoodhealth.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/neighborhoodhealth.jpg, _images/medium/neighborhoodhealth.jpg 2x" alt="Neighborhood Health">
+          </picture>
+          <div class="info">
+            <h3 class="title">Neighborhood Health</h3>
+            <p class="items">Website Development</p>
+            <p class="details">Completed during tenure at iDesign, Inc.</p><a href="http://neighborhoodhealthtn.org/" target="_blank" class="button">Visit Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item tall web development design"><a href="#martha" title="Martha O'Bryan Center Website" rel="web" class="fancybox fancybox"><img src="_images/tall-martha.jpg" alt="Martha O'Bryan Center">
+          <h3 class="title">Martha O'Bryan Center</h3><span class="button">Details</span></a>
+        <div id="martha" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/martha.jpg, _images/extralarge/martha.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/martha.jpg, _images/extramedium/martha.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/martha.jpg, _images/medium/martha.jpg 2x" alt="Martha O'Bryan Center">
+          </picture>
+          <div class="info">
+            <h3 class="title">Martha O'Bryan Center</h3>
+            <p class="items">Website Design</p>
+            <p class="items">Website Development</p>
+            <p class="details">Website designed and developed for Nashville Neighborhood outreach Center, Martha O'Bryan Center. A major win in the UX of this site was the consolidation of 16 individual forms across the former site to one consolidated user-advancing form on the rebuild. </p><a href="http://www.marthaobryan.org/" target="_blank" class="button">Visit Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item tall print web design development"><a href="#inquicker" title="InQuicker Website and Print Collateral" rel="print" class="fancybox fancybox"><img src="_images/tall-inquicker.jpg" alt="InQuicker">
+          <h3 class="title">InQuicker</h3><span class="button">Details</span></a>
+        <div id="inquicker" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/inquicker.jpg, _images/extralarge/inquicker.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/inquicker.jpg, _images/extramedium/inquicker.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/inquicker.jpg, _images/medium/inquicker.jpg 2x" alt="InQuicker">
+          </picture>
+          <div class="info">
+            <h3 class="title">InQuicker</h3>
+            <p class="items">Print Collateral Design</p>
+            <p class="items">Email Design</p>
+            <p class="items">Website Design</p>
+            <p class="items">Website Development</p>
+            <p class="details">A startup eventually bought out by Stericycle, this project included lots of fun infographics, presentation marerials, sales sheets, ad ultimately the Wordpress-powered website.</p><a href="https://inquicker.com/" target="_blank" class="button">Visit Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item web development"><a href="#sef" title="Southeast Financial Website" rel="web" class="fancybox fancybox"><img src="_images/square-sef.jpg" alt="Southeast Financial">
+          <h3 class="title">Southeast Financial</h3><span class="button">Details</span></a>
+        <div id="sef" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/sef.jpg, _images/extralarge/sef.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/sef.jpg, _images/extramedium/sef.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/sef.jpg, _images/medium/sef.jpg 2x" alt="Southeast Financial">
+          </picture>
+          <div class="info">
+            <h3 class="title">Southeast Financial </h3>
+            <p class="items">Website Development</p>
+            <p class="details">Completed during tenure at iDesign, Inc. </p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item branding design"><a href="#longhaul" title="Long Haul logo" rel="print" class="fancybox fancybox"><img src="_images/square-longhaul.jpg" alt="Long Haul">
+          <h3 class="title">Long Haul</h3><span class="button">Details</span></a>
+        <div id="longhaul" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/longhaul.jpg, _images/extralarge/longhaul.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/longhaul.jpg, _images/extramedium/longhaul.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/longhaul.jpg, _images/medium/longhaul.jpg 2x" alt="Long Haul">
+          </picture>
+          <div class="info">
+            <h3 class="title">Long Haul</h3>
+            <p class="items">Logo Design</p>
+            <p class="details">Created in 2006</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item tall web development"><a href="#tsu" title="Tennessee State University Men's Basketball Team Website" rel="web" class="fancybox fancybox"><img src="_images/tall-tsu.jpg" alt="TSU Men's Basketball">
+          <h3 class="title">Tennessee State University Men's Basketball Team</h3><span class="button">Details</span></a>
+        <div id="tsu" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/tsu.jpg, _images/extralarge/tsu.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/tsu.jpg, _images/extramedium/tsu.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/tsu.jpg, _images/medium/tsu.jpg 2x" alt="Tennessee State University Men's Basketball Team Website">
+          </picture>
+          <div class="info">
+            <h3 class="title">Tennessee State University Men's Basketball Team</h3>
+            <p class="items">Website Development</p>
+            <p class="details">Completed during tenure at iDesign, Inc. </p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item rect design print branding"><a href="#aidswalk" title="Nashville Aids Walk Poster" rel="branding" class="fancybox fancybox"><img src="_images/rect-aids.jpg" alt="Nashville Aids Walk">
+          <h3 class="title">Nashville Aids Walk</h3><span class="button">Details</span></a>
+        <div id="aidswalk" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/aidswalk.jpg, _images/extralarge/aidswalk.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/aidswalk.jpg, _images/extramedium/aidswalk.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/aidswalk.jpg, _images/medium/aidswalk.jpg 2x" alt="Nashville Aids Walk">
+          </picture>
+          <div class="info">
+            <h3 class="title">Nashville Aids Walk</h3>
+            <p class="items">Print Collateral Design</p>
+            <p class="details">The proposed centerpiece design for the Nashville Aids Walk, 2005.</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item print design"><a href="#symphony" title="Nashville Symphony Print Design" rel="print" class="fancybox fancybox"><img src="_images/square-symphony.jpg" alt="Nashville Symphony">
+          <h3 class="title">Nashville Symphony</h3><span class="button">Details</span></a>
+        <div id="symphony" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/symphony.jpg, _images/extralarge/symphony.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/symphony.jpg, _images/extramedium/symphony.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/symphony.jpg, _images/medium/symphony.jpg 2x" alt="Nashville Symphony">
+          </picture>
+          <div class="info">
+            <h3 class="title">Nashville Symphony</h3>
+            <p class="items">Print Collateral Design</p>
+            <p class="details">Completed during tenure at Nashville Symphony.</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item web development design branding"><a href="#rsg" title="Ready Set Go Website Design and Development" rel="print" class="fancybox fancybox"><img src="_images/square-readysetgo.jpg" alt="Ready Set Go">
+          <h3 class="title">Ready Set Go</h3><span class="button">Details</span></a>
+        <div id="rsg" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/rsg.jpg, _images/extralarge/rsg.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/rsg.jpg, _images/extramedium/rsg.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/rsg.jpg, _images/medium/rsg.jpg 2x" alt="Ready Set Go">
+          </picture>
+          <div class="info">
+            <h3 class="title">Ready Set Go</h3>
+            <p class="items">Logo Design</p>
+            <p class="items">Print Collateral Design</p>
+            <p class="items">Email Design</p>
+            <p class="items">Website Design</p>
+            <p class="items">Website Development</p>
+            <p class="details">Let’s get this straight: We are not your typical creative agency. </p>
+            <p class="details">Ready Set Go is a collective of freelancers who have combined their creative talents to provide collaborative digital marketing solutions. We take a lot of pride in our work. A lot. After all, our names and reputations are on the line—so when we do something, we go for the win. </p>
+            <p class="details">And just like our setup, our entire approach to the creative process is unique. Rather than focus our work on a specific industry, service, or product, we prefer to focus on a specific type of client. That is, we specialize in working with people who aren’t afraid to rebel against tradition, who love pushing creative boundaries, and who don’t tend to use the word leverage as a verb. </p>
+            <p class="details">But we're more than creative professionals. We're also business owners and entrepreneurs who understand the responsibilities and challenges that come with owning and operating a business. </p><a href="http://readysetgo.agency/" target="_blank" class="button">Visit Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item print design branding"><a href="#peg" title="Peg Petrelli Branding and Print Design" rel="print" class="fancybox fancybox"><img src="_images/square-peg.jpg" alt="Peg Petrelli">
+          <h3 class="title">Peg Petrelli</h3><span class="button">Details</span></a>
+        <div id="peg" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/peg.jpg, _images/extralarge/peg.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/peg.jpg, _images/extramedium/peg.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/peg.jpg, _images/medium/peg.jpg 2x" alt="Peg Petrelli">
+          </picture>
+          <div class="info">
+            <h3 class="title">Angry Eagle <span class="nobreak">Lodge & Outfitters</span></h3>
+            <p class="items">Logo Design</p>
+            <p class="items">Print Collateral Design</p>
+            <p class="items">Email Design</p>
+            <p class="items">Website Design</p>
+            <p class="items">Website Development</p>
+            <p class="details">Completed during tenure at Catalog Music Company. </p><a href="http://www.angryeagle.com" target="_blank" class="button">Visit Website</a>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item rect web development"><a href="#dykes" title="Dykes Foodservice Website" rel="web" class="fancybox fancybox"><img src="_images/rect-dykes.jpg" alt="Dykes Foodservice">
+          <h3 class="title">Dykes Foodservice</h3><span class="button">Details</span></a>
+        <div id="dykes" class="inline">
+          <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+            <source srcset="_images/large/dykes.jpg, _images/extralarge/dykes.jpg 2x" media="(min-width: 2500px)">
+            <source srcset="_images/medium/dykes.jpg, _images/extramedium/dykes.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/dykes.jpg, _images/medium/dykes.jpg 2x" alt="Dykes Foodservice">
+          </picture>
+          <div class="info">
+            <h3 class="title">Angry Eagle <span class="nobreak">Lodge & Outfitters</span></h3>
+            <p class="items">Logo Design</p>
+            <p class="items">Print Collateral Design</p>
+            <p class="items">Email Design</p>
+            <p class="items">Website Design</p>
+            <p class="items">Website Development</p>
+            <p class="details">Completed during tenure at Catalog Music Company. </p><a href="http://www.angryeagle.com" target="_blank" class="button">Visit Website</a>
+          </div>
         </div>
       </div>
     </div>

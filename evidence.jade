@@ -8,16 +8,11 @@ script(type='text/javascript').
     $('.fancybox').fancybox();
 
     // init Isotope
-    var $grid = $('.grid').isotope({
+    var $grid = $('.isotope-case').isotope({
       itemSelector: '.gallery-item',
-      layoutMode: 'fitRows',
-      getSortData: {
-        alpha: '.alpha',
-        date: '.date parseInt',
-        weight: function( itemElem ) {
-          var weight = $( itemElem ).find('.date').text();
-          return parseFloat( weight.replace( /[\(\)]/g, '') );
-        }
+      percentPosition: true,
+      masonry: {
+        columnWidth: '.grid-sizer'
       }
     });
 
@@ -43,12 +38,6 @@ script(type='text/javascript').
       $grid.isotope({ filter: filterValue });
     });
 
-    // bind sort button click
-    $('#sorts').on( 'click', 'button', function() {
-      var sortByValue = $(this).attr('data-sort-by');
-      $grid.isotope({ sortBy: sortByValue });
-    });
-
     // change is-checked class on buttons
     $('.button-group').each( function( i, buttonGroup ) {
       var $buttonGroup = $( buttonGroup );
@@ -68,6 +57,7 @@ body.animate-bg.subpage.evidencepage
       include _includes/navigation
 
       #filters.button-group
+      
         button.button.is-checked(data-filter='*') All
         button.button(data-filter='.design') Design
         button.button(data-filter='.development') Development
@@ -75,23 +65,553 @@ body.animate-bg.subpage.evidencepage
         button.button(data-filter='.print') Print
         button.button(data-filter='.branding') Branding
         
-      //- #sorts.button-group
-      //-   button.button.is-checked(data-sort-by='original-order') original order
-      //-   button.button(data-sort-by='date') Chronological
-      //-   button.button(data-sort-by='alpha') Alphabetical
-        
       .isotope-case
       
-        .gallery-item.photo
-          a.fancybox(class='fancybox' href='#p141016' title='Fish Held by Tail Under Water' rel='photo')
-            img(src='_images/small/141016.jpg' alt='Fish Held by Tail Under Water')
-            h3.alpha Fish Held by Tail Under Water
-            p.date 141016
+        .grid-sizer.gallery-item.design.development.web.print.branding
+          a.fancybox(class='fancybox' href='#angryeagle')
+            img(src='_images/square-angryeagle.jpg' alt='Angry Eagle logo crop')
+            h3.title Angry Eagle Lodge & Outfitters
+            span.button Details
 
-          #p141016.inline
+          #angryeagle.inline
             picture
               <!--[if IE 9]><video style='display: none;'><![endif]-->
-              source(srcset='_images/large/141016.jpg, _images/extralarge/141016.jpg 2x' media='(min-width: 2500px)')
-              source(srcset='_images/medium/141016.jpg, _images/extramedium/141016.jpg 2x' media='(min-width: 1000px)')
+              source(srcset='_images/large/angryeagle.jpg, _images/extralarge/angryeagle.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/angryeagle.jpg, _images/extramedium/angryeagle.jpg 2x' media='(min-width: 1000px)')
               <!--[if IE 9]></video><![endif]-->
-              img(srcset='_images/small/141016.jpg, _images/medium/141016.jpg 2x' alt='Fish Held by Tail Under Water')
+              img(srcset='_images/small/angryeagle.jpg, _images/medium/angryeagle.jpg 2x' alt='Angry Eagle Lodge & Outfitters')
+            .info
+              h3.title Angry Eagle 
+                span.nobreak Lodge & Outfitters
+              p.items Logo Design
+              p.items Print Collateral Design
+              p.items Email Design
+              p.items Website Design
+              p.items Website Development
+              p.details Completed during tenure at Catalog Music Company. 
+              a.button(href='http://www.angryeagle.com' target='_blank') Visit Website
+
+        .gallery-item.rect.web.development
+          a.fancybox(class='fancybox' href='#specialolympics')
+            img(src='_images/rect-specialolympics.jpg' alt='Special Olympics')
+            h3.title Special Olympics
+            span.button Details
+
+          #specialolympics.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/specialolympics.jpg, _images/extralarge/specialolympics.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/specialolympics.jpg, _images/extramedium/specialolympics.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/specialolympics.jpg, _images/medium/specialolympics.jpg 2x' alt='Special Olympics')
+            .info
+              h3.title Special Olympics TN
+              p.items Website Development
+              p.details Integrated with an in-house Content Management System, I was able to make responsive planning choices during the build of this site.
+              a.button(href='http://specialolympicstn.org/' target='_blank') Visit Website
+
+        .gallery-item.tall.web.design.development.branding
+          a.fancybox(class='fancybox' href='#tuba')
+            img(src='_images/tall-tuba.jpg' alt='Tennessee Technological University R. Winston Morris Tuba Collection Museum')
+            h3.title Tennessee Technological University 
+              span.nobreak R. Winston 
+              | Morris Tuba Collection Museum
+            span.button Details
+
+          #tuba.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/tuba.jpg, _images/extralarge/tuba.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/tuba.jpg, _images/extramedium/tuba.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/tuba.jpg, _images/medium/tuba.jpg 2x' alt='Tennessee Technological University R. Winston Morris Tuba Collection Museum')
+            .info
+              h3.title Tennessee Technological University R. Winston Morris Tuba Collection Museum
+              p.items Web Application Design
+              p.items Web Application Development
+              p.details Powered by the Physical Web, this app was designed to connect the collection database to the physical museum experience. 
+              //- a.button(href='https://tuba.museum/' target='_blank') Visit Website
+
+        .gallery-item.web.development
+          a.fancybox(class='fancybox' href='#bkon' title='BKON Connect Website and Beacon Management Application' rel='web')
+            img(src='_images/square-bkon.jpg' alt='BKON Connect Website')
+            h3.title BKON Connect
+            span.button Details
+
+          #bkon.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/bkon.jpg, _images/extralarge/bkon.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/bkon.jpg, _images/extramedium/bkon.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/bkon.jpg, _images/medium/bkon.jpg 2x' alt='BKON Connect Website')
+            .info
+              h3.title BKON Connect
+              p.items Web Application Development
+              p.details BKON Connect is a Customer Directed Engagement Platform that develops software and hardware tools which can turn any mobile app into a browser for the Internet of Things, allowing people to join digital experiences in physical spaces – any content, activity, app, location, touchpoint anywhere.
+              p.details BKON’s new PHY platform enables apps with “touchpoint browsing,” which lets people browse digital touchpoints in a physical place, see a quick preview of the content and control whether to select the content. PHY is an enterprise class, end-to-end platform that manages all types of digital touchpoints, including Physical Web beacons, QR codes, and NFC tags. PHY lets retailers, galleries and venues of all types quickly and easily change content across multiple locations and for multiple audiences, driving the ultimate proximity customer engagement and interaction.
+              a.button(href='https://www.bkon.com' target='_blank') Visit Website
+
+        .gallery-item.tall.design.print
+          a.fancybox(class='fancybox' href='#kitty' title='Country Music Greats Catalog' rel='print')
+            img(src='_images/tall-ccm.jpg' alt='Country Music Greats Catalog')
+            h3.title Country Music Greats Catalog
+            span.button Details
+
+          #kitty.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/kitty.jpg, _images/extralarge/kitty.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/kitty.jpg, _images/extramedium/kitty.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/kitty.jpg, _images/medium/kitty.jpg 2x' alt='Country Music Greats Catalog')
+            .info
+              h3.title Country Music Greats Catalog
+              p.items Print Collateral Design
+              p.details Completed during tenure at Catalog Music Company. 
+
+        .gallery-item.design.web
+          a.fancybox(class='fancybox' href='#fasterfitness' title='Faster Fitness Website' rel='web')
+            img(src='_images/square-fasterfitness.jpg' alt='Faster Fitness Website')
+            h3.title Faster Fitness
+            span.button Details
+
+          #fasterfitness.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/fasterfitness.jpg, _images/extralarge/fasterfitness.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/fasterfitness.jpg, _images/extramedium/fasterfitness.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/fasterfitness.jpg, _images/medium/fasterfitness.jpg 2x' alt='Faster Fitness Website')
+            .info
+              h3.title Faster Fitness
+              p.items Website Design
+              p.details Completed during tenure at Drive Social Media. 
+
+        .gallery-item.design.web.development.branding
+          a.fancybox(class='fancybox' href='#precision' title='Precision Metalwork Website and Branding' rel='web')
+            img(src='_images/square-precision.jpg' alt='Precision Metalwork Website')
+            h3.title Precision Metalwork
+            span.button Details
+
+          #precision.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/precision.jpg, _images/extralarge/precision.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/precision.jpg, _images/extramedium/precision.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/precision.jpg, _images/medium/precision.jpg 2x' alt='Precision Metalwork Website')
+            .info
+              h3.title Precision Metalwork
+              p.items Logo Design
+              p.items Website Design
+              p.items Website Development
+              p.details Definitely a favorite project for an awesome client. This static site was built fluidly responsive, working with a logo developer and a content specialist. The content specialist did a great job of writing varied content, allowing me to design lots of variety in layouts. Performing well, this site does a great job of eye leading and lead generation. 
+              a.button(href='http://precisionmetalwork.com/' target='_blank') Visit Website
+
+        .gallery-item.tall.design.web.development.branding.print
+          a.fancybox(class='fancybox' href='#coffeelunch' title='Coffee, Lunch. Website and Branding' rel='web')
+            img(src='_images/tall-coffeelunch.jpg' alt='Coffee, Lunch. Website')
+            h3.title Coffee, Lunch.
+            span.button Details
+
+          #coffeelunch.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/coffeelunch.jpg, _images/extralarge/coffeelunch.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/coffeelunch.jpg, _images/extramedium/coffeelunch.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/coffeelunch.jpg, _images/medium/coffeelunch.jpg 2x' alt='Coffee, Lunch. Website')
+            .info
+              h3.title Coffee, Lunch. 
+              p.items Print Collateral Design
+              p.items Email Design
+              p.items Website Design
+              p.items Website Development
+              p.details Completed for a now-closed daytime restaurant downtown called, Coffee, Lunch. 
+              //- a.button(href='http://www.angryeagle.com' target='_blank') Visit Website
+
+        .gallery-item.web.design
+          a.fancybox(class='fancybox' href='#kenricks' title="Kenrick's Website Design" rel='web')
+            img(src='_images/square-kenricks.jpg' alt="Kenrick's Website")
+            h3.title Kenrick's
+            span.button Details
+
+          #kenricks.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/kenricks.jpg, _images/extralarge/kenricks.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/kenricks.jpg, _images/extramedium/kenricks.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/kenricks.jpg, _images/medium/kenricks.jpg 2x' alt="Kenrick's Website")
+            .info
+              h3.title Kenrick's Meats
+              p.items Website Design
+              p.details Meat retailer website design completed during tenure at Drive Social Media. 
+              //- a.button(href='http://www.angryeagle.com' target='_blank') Visit Website
+
+        .gallery-item.design.web
+          a.fancybox(class='fancybox' href='#oceano' title='Oceano Website' rel='design')
+            img(src='_images/square-oceano.jpg' alt='Oceano Website')
+            h3.title Oceano
+            span.button Details
+
+          #oceano.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/oceano.jpg, _images/extralarge/oceano.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/oceano.jpg, _images/extramedium/oceano.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/oceano.jpg, _images/medium/oceano.jpg 2x' alt='Oceano Website')
+            .info
+              h3.title Oceano
+              p.items Website Design
+              p.details Restaurant website design completed during tenure at Drive Social Media. 
+              //- a.button(href='http://www.angryeagle.com' target='_blank') Visit Website
+
+        .gallery-item.rect.print.design
+          a.fancybox(class='fancybox' href='#watkins' title='Watkins College of Art, Design & Film Poster' rel='web')
+            img(src='_images/rect-watkins.jpg' alt='Watkins College of Art, Design & Film')
+            h3.title Watkins College 
+              span.nobreak of Art, 
+              span.nobreak Design & Film
+            span.button Details
+
+          #watkins.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/watkins.jpg, _images/extralarge/watkins.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/watkins.jpg, _images/extramedium/watkins.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/watkins.jpg, _images/medium/watkins.jpg 2x' alt='Watkins College of Art, Design & Film')
+            .info
+              h3.title Watkins College 
+                span.nobreak of Art, 
+                span.nobreak Design & Film
+              p.items Print Collateral Design
+              p.details Poster and accompanying pring and giveaway items completed for the 2006 Graphic Design Senior Show at Watkins College of Art, Design, and Film. 
+              //- a.button(href='http://www.angryeagle.com' target='_blank') Visit Website
+
+        .gallery-item.web.design.development
+          a.fancybox(class='fancybox' href='#sounds' title='Nashville Sounds Food Finder App' rel='web')
+            img(src='_images/square-sounds.jpg' alt='Nashville Sounds')
+            h3.title Nashville Sounds
+            span.button Details
+
+          #sounds.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/sounds.jpg, _images/extralarge/sounds.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/sounds.jpg, _images/extramedium/sounds.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/sounds.jpg, _images/medium/sounds.jpg 2x' alt='Nashville Sounds')
+            .info
+              h3.title Nashville Sounds Gameday Food Finder App
+              p.items Website Design
+              p.items Website Development
+              p.details Completed for BKON Connect as part of a "first ballpark on the Physical Web" project in 2016, this beer-drinking, pretzel-eater's paradise helps baseball game goers find the exact cheesy dipping sauce their heart desires. 
+              a.button(href='http://foodbeacon.com/' target='_blank') Visit Application
+
+        .gallery-item.rect.print.design
+          a.fancybox(class='fancybox' href='#cirrus' title='Cirrus Outdoor Power Equipment Branding and Signage' rel='web')
+            img(src='_images/rect-cirrus.jpg' alt='Cirrus Outdoor Power Equipment')
+            h3.title Cirrus Outdoor Power Equipment
+            span.button Details
+
+          #cirrus.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/cirrus.jpg, _images/extralarge/cirrus.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/cirrus.jpg, _images/extramedium/cirrus.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/cirrus.jpg, _images/medium/cirrus.jpg 2x' alt='Cirrus Outdoor Power Equipment')
+            .info
+              h3.title Cirrus Outdoor Power Equipment
+              p.items Logo Design
+              p.items Print Collateral Design
+              p.items Indoor/Outdoor Signage Design
+              p.items Website Design
+              p.items Website Development
+              p.details Logo designed in 2004. 
+              //- a.button(href='http://www.angryeagle.com' target='_blank') Visit Website
+
+        .gallery-item.web.design
+          a.fancybox(class='fancybox' href='#skulls' title="Skull's Rainbow Room Website" rel='web')
+            img(src='_images/square-skulls.jpg' alt="Skull's Rainbow Room")
+            h3.title Skull's Rainbow Room
+            span.button Details
+
+          #skulls.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/skulls.jpg, _images/extralarge/skulls.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/skulls.jpg, _images/extramedium/skulls.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/skulls.jpg, _images/medium/skulls.jpg 2x' alt="Skull's Rainbow Room")
+            .info
+              h3.title Skull's Rainbow Room
+              p.items Website Design
+              p.details Completed during tenure at Drive Social Media. 
+
+        .gallery-item.web.development
+          a.fancybox(class='fancybox' href='#connico' title='Connico Website Development' rel='web')
+            img(src='_images/square-connico.jpg' alt='Connico')
+            h3.title Connico
+            span.button Details
+
+          #connico.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/connico.jpg, _images/extralarge/connico.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/connico.jpg, _images/extramedium/connico.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/connico.jpg, _images/medium/connico.jpg 2x' alt='Connico')
+            .info
+              h3.title Connico, Incorporated
+              p.items Website Development
+              p.details Non-responsive website (client specification) completed during tenure at iDesign. 
+              a.button(href='http://www.connico.com/' target='_blank') Visit Website
+
+        .gallery-item.rect.print.design
+          a.fancybox(class='fancybox' href='#travis' title='Travis Meadows Record Design' rel='web')
+            img(src='_images/rect-travismeadows.jpg' alt='Travis Meadows')
+            h3.title Travis Meadows
+            span.button Details
+
+          #travis.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/travis.jpg, _images/extralarge/travis.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/travis.jpg, _images/extramedium/travis.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/travis.jpg, _images/medium/travis.jpg 2x' alt='Travis Meadows')
+            .info
+              h3.title Travis Meadows
+              p.items Print Collateral Design
+              p.details Full-size record cover and insert design for Nashville Singer/Songwriter Travis Meadows. 
+
+        .gallery-item.web.development
+          a.fancybox(class='fancybox' href='#neighborhood' title='Neighborhood Health Website Development' rel='web')
+            img(src='_images/square-neighborhoodhealth.jpg' alt='Neighborhood Health')
+            h3.title Neighborhood Health
+            span.button Details
+
+          #neighborhood.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/neighborhoodhealth.jpg, _images/extralarge/neighborhoodhealth.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/neighborhoodhealth.jpg, _images/extramedium/neighborhoodhealth.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/neighborhoodhealth.jpg, _images/medium/neighborhoodhealth.jpg 2x' alt='Neighborhood Health')
+            .info
+              h3.title Neighborhood Health
+              p.items Website Development
+              p.details Completed during tenure at iDesign, Inc.
+              a.button(href='http://neighborhoodhealthtn.org/' target='_blank') Visit Website
+
+        .gallery-item.tall.web.development.design
+          a.fancybox(class='fancybox' href='#martha' title="Martha O'Bryan Center Website" rel='web')
+            img(src='_images/tall-martha.jpg' alt="Martha O'Bryan Center")
+            h3.title Martha O'Bryan Center
+            span.button Details
+
+          #martha.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/martha.jpg, _images/extralarge/martha.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/martha.jpg, _images/extramedium/martha.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/martha.jpg, _images/medium/martha.jpg 2x' alt="Martha O'Bryan Center")
+            .info
+              h3.title Martha O'Bryan Center
+              p.items Website Design
+              p.items Website Development
+              p.details Website designed and developed for Nashville Neighborhood outreach Center, Martha O'Bryan Center. A major win in the UX of this site was the consolidation of 16 individual forms across the former site to one consolidated user-advancing form on the rebuild. 
+              a.button(href='http://www.marthaobryan.org/' target='_blank') Visit Website
+
+        .gallery-item.tall.print.web.design.development
+          a.fancybox(class='fancybox' href='#inquicker' title='InQuicker Website and Print Collateral' rel='print')
+            img(src='_images/tall-inquicker.jpg' alt='InQuicker')
+            h3.title InQuicker
+            span.button Details
+
+          #inquicker.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/inquicker.jpg, _images/extralarge/inquicker.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/inquicker.jpg, _images/extramedium/inquicker.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/inquicker.jpg, _images/medium/inquicker.jpg 2x' alt='InQuicker')
+            .info
+              h3.title InQuicker
+              p.items Print Collateral Design
+              p.items Email Design
+              p.items Website Design
+              p.items Website Development
+              p.details A startup eventually bought out by Stericycle, this project included lots of fun infographics, presentation marerials, sales sheets, ad ultimately the Wordpress-powered website.
+              a.button(href='https://inquicker.com/' target='_blank') Visit Website
+
+        .gallery-item.web.development
+          a.fancybox(class='fancybox' href='#sef' title='Southeast Financial Website' rel='web')
+            img(src='_images/square-sef.jpg' alt='Southeast Financial')
+            h3.title Southeast Financial
+            span.button Details
+
+          #sef.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/sef.jpg, _images/extralarge/sef.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/sef.jpg, _images/extramedium/sef.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/sef.jpg, _images/medium/sef.jpg 2x' alt='Southeast Financial')
+            .info
+              h3.title Southeast Financial 
+              p.items Website Development
+              p.details Completed during tenure at iDesign, Inc. 
+              //- a.button(href='http://www.angryeagle.com' target='_blank') Visit Website
+
+        .gallery-item.branding.design
+          a.fancybox(class='fancybox' href='#longhaul' title='Long Haul logo' rel='print')
+            img(src='_images/square-longhaul.jpg' alt='Long Haul')
+            h3.title Long Haul
+            span.button Details
+
+          #longhaul.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/longhaul.jpg, _images/extralarge/longhaul.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/longhaul.jpg, _images/extramedium/longhaul.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/longhaul.jpg, _images/medium/longhaul.jpg 2x' alt='Long Haul')
+            .info
+              h3.title Long Haul
+              p.items Logo Design
+              p.details Created in 2006
+
+        .gallery-item.tall.web.development
+          a.fancybox(class='fancybox' href='#tsu' title="Tennessee State University Men's Basketball Team Website" rel='web')
+            img(src='_images/tall-tsu.jpg' alt="TSU Men's Basketball")
+            h3.title Tennessee State University Men's Basketball Team
+            span.button Details
+
+          #tsu.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/tsu.jpg, _images/extralarge/tsu.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/tsu.jpg, _images/extramedium/tsu.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/tsu.jpg, _images/medium/tsu.jpg 2x' alt="Tennessee State University Men's Basketball Team Website")
+            .info
+              h3.title Tennessee State University Men's Basketball Team
+              p.items Website Development
+              p.details Completed during tenure at iDesign, Inc. 
+
+        .gallery-item.rect.design.print.branding
+          a.fancybox(class='fancybox' href='#aidswalk' title='Nashville Aids Walk Poster' rel='branding')
+            img(src='_images/rect-aids.jpg' alt='Nashville Aids Walk')
+            h3.title Nashville Aids Walk
+            span.button Details
+
+          #aidswalk.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/aidswalk.jpg, _images/extralarge/aidswalk.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/aidswalk.jpg, _images/extramedium/aidswalk.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/aidswalk.jpg, _images/medium/aidswalk.jpg 2x' alt='Nashville Aids Walk')
+            .info
+              h3.title Nashville Aids Walk
+              p.items Print Collateral Design
+              p.details The proposed centerpiece design for the Nashville Aids Walk, 2005.
+
+        .gallery-item.print.design
+          a.fancybox(class='fancybox' href='#symphony' title='Nashville Symphony Print Design' rel='print')
+            img(src='_images/square-symphony.jpg' alt='Nashville Symphony')
+            h3.title Nashville Symphony
+            span.button Details
+
+          #symphony.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/symphony.jpg, _images/extralarge/symphony.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/symphony.jpg, _images/extramedium/symphony.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/symphony.jpg, _images/medium/symphony.jpg 2x' alt='Nashville Symphony')
+            .info
+              h3.title Nashville Symphony
+              p.items Print Collateral Design
+              p.details Completed during tenure at Nashville Symphony.
+
+        .gallery-item.web.development.design.branding
+          a.fancybox(class='fancybox' href='#rsg' title='Ready Set Go Website Design and Development' rel='print')
+            img(src='_images/square-readysetgo.jpg' alt='Ready Set Go')
+            h3.title Ready Set Go
+            span.button Details
+
+          #rsg.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/rsg.jpg, _images/extralarge/rsg.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/rsg.jpg, _images/extramedium/rsg.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/rsg.jpg, _images/medium/rsg.jpg 2x' alt='Ready Set Go')
+            .info
+              h3.title Ready Set Go
+              p.items Logo Design
+              p.items Print Collateral Design
+              p.items Email Design
+              p.items Website Design
+              p.items Website Development
+              p.details Let’s get this straight: We are not your typical creative agency. 
+              p.details Ready Set Go is a collective of freelancers who have combined their creative talents to provide collaborative digital marketing solutions. We take a lot of pride in our work. A lot. After all, our names and reputations are on the line—so when we do something, we go for the win. 
+              p.details And just like our setup, our entire approach to the creative process is unique. Rather than focus our work on a specific industry, service, or product, we prefer to focus on a specific type of client. That is, we specialize in working with people who aren’t afraid to rebel against tradition, who love pushing creative boundaries, and who don’t tend to use the word leverage as a verb. 
+              p.details But we're more than creative professionals. We're also business owners and entrepreneurs who understand the responsibilities and challenges that come with owning and operating a business. 
+              a.button(href='http://readysetgo.agency/' target='_blank') Visit Website
+
+        .gallery-item.print.design.branding
+          a.fancybox(class='fancybox' href='#peg' title='Peg Petrelli Branding and Print Design' rel='print')
+            img(src='_images/square-peg.jpg' alt='Peg Petrelli')
+            h3.title Peg Petrelli
+            span.button Details
+
+          #peg.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/peg.jpg, _images/extralarge/peg.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/peg.jpg, _images/extramedium/peg.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/peg.jpg, _images/medium/peg.jpg 2x' alt='Peg Petrelli')
+            .info
+              h3.title Angry Eagle 
+                span.nobreak Lodge & Outfitters
+              p.items Logo Design
+              p.items Print Collateral Design
+              p.items Email Design
+              p.items Website Design
+              p.items Website Development
+              p.details Completed during tenure at Catalog Music Company. 
+              a.button(href='http://www.angryeagle.com' target='_blank') Visit Website
+
+        .gallery-item.rect.web.development
+          a.fancybox(class='fancybox' href='#dykes' title='Dykes Foodservice Website' rel='web')
+            img(src='_images/rect-dykes.jpg' alt='Dykes Foodservice')
+            h3.title Dykes Foodservice
+            span.button Details
+
+          #dykes.inline
+            picture
+              <!--[if IE 9]><video style='display: none;'><![endif]-->
+              source(srcset='_images/large/dykes.jpg, _images/extralarge/dykes.jpg 2x' media='(min-width: 2500px)')
+              source(srcset='_images/medium/dykes.jpg, _images/extramedium/dykes.jpg 2x' media='(min-width: 1000px)')
+              <!--[if IE 9]></video><![endif]-->
+              img(srcset='_images/small/dykes.jpg, _images/medium/dykes.jpg 2x' alt='Dykes Foodservice')
+            .info
+              h3.title Angry Eagle 
+                span.nobreak Lodge & Outfitters
+              p.items Logo Design
+              p.items Print Collateral Design
+              p.items Email Design
+              p.items Website Design
+              p.items Website Development
+              p.details Completed during tenure at Catalog Music Company. 
+              a.button(href='http://www.angryeagle.com' target='_blank') Visit Website
