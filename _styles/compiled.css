@@ -731,6 +731,11 @@ iframe {
 .subpage .columns.two .column.kyle {
   background: url("../_images/proof-kyle.jpg");
 }
+.subpage .columns.two.even .column {
+  margin: 0 4.5%;
+  text-align: center;
+  width: 40%;
+}
 .subpage .columns.three p {
   font-family: 'Quicksand', Arial, Helvetica, sans-serif;
   font-weight: 400;
