@@ -688,16 +688,16 @@ iframe {
   z-index: -1;
 }
 .subpage .columns.two .column.testimonial .button {
-  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  background: radial-gradient(ellipse at center, #e2bd4d 0, #d6a203 100%);
   border-radius: 5px;
-  background: radial-gradient(ellipse at center, #e2bd4d 0%, #d6a203 100%);
   color: #fff;
   display: block;
   font-size: 0.8em;
   letter-spacing: 2px;
   line-height: 3em;
   margin: 20px 0;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  font-weight: 400;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -772,21 +772,21 @@ iframe {
   max-width: 100%;
 }
 .subpage .columns.logo .column.text {
-  width: 80%;
   margin-left: 4.5%;
   vertical-align: middle;
+  width: 80%;
 }
 .subpage .button {
-  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  background: radial-gradient(ellipse at center, #e2bd4d 0, #d6a203 100%);
   border-radius: 5px;
-  background: radial-gradient(ellipse at center, #e2bd4d 0%, #d6a203 100%);
   color: #fff;
   display: block;
   font-size: 0.8em;
   letter-spacing: 2px;
   line-height: 3em;
   margin: 20px 0;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  font-weight: 400;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -798,11 +798,28 @@ iframe {
   background: radial-gradient(ellipse at center, #d6a203 0%, #e2bd4d 100%);
   font-weight: 700;
 }
+.subpage.evidencepage h3.title {
+  color: #fff;
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  line-height: 1.3em;
+  padding-bottom: 0;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 15px;
+  width: 100%;
+}
 .subpage.evidencepage .button {
-  background: transparent;
-  border: none;
-  width: auto !important;
-  margin: 0 20px !important;
+  background: #d6a203;
+  border: 0;
+  margin: 0 10%;
+  width: 80%;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
 }
 .subpage.evidencepage .button:hover {
   text-decoration: none;
@@ -818,10 +835,12 @@ iframe {
   text-align: center;
 }
 .subpage.evidencepage .button-group .button {
+  background-color: transparent;
   display: inline-block;
   float: none;
   margin: 0 0 3px 0;
-  width: 32.55%;
+  position: inherit;
+  width: auto;
 }
 .subpage.evidencepage .btn-row {
   margin: 1px auto 2px;
@@ -845,24 +864,42 @@ iframe {
   display: none;
 }
 .subpage.evidencepage .gallery-item {
-  position: relative;
-  float: left;
-  width: 19.5%;
-  height: auto;
-  margin: 1px;
-  padding: 0;
-  background: $black;
+  background: #565656;
   color: #fff;
+  float: left;
+  height: auto;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 20%;
+}
+.subpage.evidencepage .gallery-item.rect {
+  width: 40%;
+}
+.subpage.evidencepage .gallery-item.tall img {
+  margin-bottom: -12px;
 }
 .subpage.evidencepage .gallery-item > * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+}
+.subpage.evidencepage .gallery-item a:hover img {
+  opacity: 1;
+  -webkit-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+}
+.subpage.evidencepage .gallery-item a:hover h3 {
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-out;
+  transition: opacity 400ms ease-out;
 }
 .subpage.evidencepage .gallery-item picture,
 .subpage.evidencepage .gallery-item video {
   width: 100%;
 }
 .subpage.evidencepage .gallery-item img {
+  opacity: 0.3;
   width: 100%;
 }
 .subpage.evidencepage .gallery-item .alpha,

@@ -168,9 +168,9 @@
             max-width: 100%
 
         &.text
-          width: 80%
           margin-left: 4.5%
           vertical-align: middle
+          width: 80%
 
   .button
     $button(100%)
@@ -178,11 +178,27 @@
 
   &.evidencepage
 
+    h3.title
+      color: $white
+      font-size: 0.8em
+      letter-spacing: 3px
+      line-height: 1.3em
+      padding-bottom: 0
+      $primary-font($light)
+      text-align: center
+      text-transform: uppercase
+      position: absolute
+      top: 15px
+      width: 100%
+
     .button
-      background: transparent
-      border: none
-      width: auto !important
-      margin: 0 20px !important
+      background: $yellow
+      border: 0
+      margin: 0 10%
+      width: 80%
+      position: absolute
+      bottom: 10px
+      text-align: center
 
       &:hover
         text-decoration: none
@@ -201,10 +217,12 @@
       text-align: center
 
       .button
+        background-color: transparent
         display: inline-block
         float: none
         margin: 0 0 3px 0
-        width: 32.55%
+        position: inherit
+        width: auto
 
     .btn-row
       clear(both)
@@ -235,25 +253,44 @@
     /* ---- .gallery-item ---- */
 
     .gallery-item
-      clear(both)
-      position: relative
-      float: left
-      width: 19.5%
-      height: auto
-      margin: 1px
-      padding: 0
       background: $black
+      clear(both)
       color: $white
+      float: left
+      height: auto
+      overflow: hidden
+      padding: 0
+      position: relative
+      width: 20%
+
+      &.rect
+        width: 40%
+
+      &.tall
+        img
+          margin-bottom: -12px
 
       > *
         margin: 0
         padding: 0
+        text-decoration: none
+
+      a:hover
+
+        img
+          opacity: 1
+          transition: opacity 400ms ease-in
+
+        h3
+          opacity: 0
+          transition: opacity 400ms ease-out
 
       picture,
       video
         width: 100%
 
       img
+        opacity: 0.3
         width: 100%
 
       .alpha,
