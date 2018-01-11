@@ -1908,6 +1908,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_images\/tall-simplypeople.jpg": {
+		"ft": 16384,
+		"iS": 32092,
+		"oA": 0,
+		"oAP": "\/_images\/tall-simplypeople.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/_images\/tall-tsu.jpg": {
 		"ft": 16384,
 		"iS": 37527,

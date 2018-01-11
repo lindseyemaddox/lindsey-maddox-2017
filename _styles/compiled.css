@@ -312,6 +312,9 @@ p.affiliation {
   text-align: right;
   text-transform: uppercase;
 }
+span.nobreak {
+  white-space: nowrap;
+}
 .border-radius(n) {
   border-radius: n;
 }
@@ -806,9 +809,9 @@ iframe {
   padding-bottom: 0;
   font-family: 'Quicksand', Arial, Helvetica, sans-serif;
   font-weight: 300;
+  position: absolute;
   text-align: center;
   text-transform: uppercase;
-  position: absolute;
   top: 15px;
   width: 100%;
 }
@@ -816,10 +819,11 @@ iframe {
   background: #d6a203;
   border: 0;
   margin: 0 10%;
-  width: 80%;
+  opacity: 0;
   position: absolute;
-  bottom: 10px;
   text-align: center;
+  top: 20%;
+  width: 80%;
 }
 .subpage.evidencepage .button:hover {
   text-decoration: none;
@@ -838,7 +842,7 @@ iframe {
   background-color: transparent;
   display: inline-block;
   float: none;
-  margin: 0 0 3px 0;
+  margin: 0 0 3px;
   position: inherit;
   width: auto;
 }
@@ -884,15 +888,27 @@ iframe {
   padding: 0;
   text-decoration: none;
 }
-.subpage.evidencepage .gallery-item a:hover img {
-  opacity: 1;
-  -webkit-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
+.subpage.evidencepage .gallery-item a:hover {
+  margin: -2%;
+  overflow: hidden;
+  -webkit-transition: margin 400ms ease-in;
+  transition: margin 400ms ease-in;
 }
-.subpage.evidencepage .gallery-item a:hover h3 {
-  opacity: 0;
+.subpage.evidencepage .gallery-item a:hover .button {
+  opacity: 1;
   -webkit-transition: opacity 400ms ease-out;
   transition: opacity 400ms ease-out;
+}
+.subpage.evidencepage .gallery-item a:hover img {
+  opacity: 1;
+  -webkit-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
+  width: 104%;
+}
+.subpage.evidencepage .gallery-item a:hover h3 {
+  color: #d6a203;
+  -webkit-transition: color 400ms ease-out;
+  transition: color 400ms ease-out;
 }
 .subpage.evidencepage .gallery-item picture,
 .subpage.evidencepage .gallery-item video {
