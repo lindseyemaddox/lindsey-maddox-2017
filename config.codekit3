@@ -194,6 +194,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_images\/extralarge\/petrelli.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/_images\/extralarge\/petrelli.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/_images\/extralarge\/precision.jpg": {
 		"ft": 16384,
 		"iS": 10136,
@@ -269,6 +279,16 @@
 		"iS": 235944,
 		"oA": 0,
 		"oAP": "\/_images\/extralarge\/symphony.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/_images\/extralarge\/tnrmt.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/_images\/extralarge\/tnrmt.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -484,6 +504,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_images\/extramedium\/petrelli.jpg": {
+		"ft": 16384,
+		"iS": 449585,
+		"oA": 0,
+		"oAP": "\/_images\/extramedium\/petrelli.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_images\/extramedium\/precision.jpg": {
 		"ft": 16384,
 		"iS": 0,
@@ -501,7 +531,7 @@
 		"oAP": "\/_images\/extramedium\/rsg.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/extramedium\/sef.jpg": {
@@ -512,6 +542,16 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/extramedium\/simply-people.jpg": {
+		"ft": 16384,
+		"iS": 64202,
+		"oA": 0,
+		"oAP": "\/_images\/extramedium\/simply-people.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/extramedium\/skulls.jpg": {
@@ -562,6 +602,16 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"\/_images\/extramedium\/tnrmt.jpg": {
+		"ft": 16384,
+		"iS": 215835,
+		"oA": 0,
+		"oAP": "\/_images\/extramedium\/tnrmt.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/_images\/extramedium\/travis.jpg": {
@@ -823,6 +873,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_images\/large\/petrelli.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/_images\/large\/petrelli.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/_images\/large\/precision.jpg": {
 		"ft": 16384,
 		"iS": 0,
@@ -860,7 +920,7 @@
 		"oAP": "\/_images\/large\/simply-people.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/large\/skulls.jpg": {
@@ -901,6 +961,16 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"\/_images\/large\/tnrmt.jpg": {
+		"ft": 16384,
+		"iS": 805907,
+		"oA": 0,
+		"oAP": "\/_images\/large\/tnrmt.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/_images\/large\/travis.jpg": {
@@ -1188,6 +1258,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_images\/medium\/petrelli.jpg": {
+		"ft": 16384,
+		"iS": 155380,
+		"oA": 0,
+		"oAP": "\/_images\/medium\/petrelli.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_images\/medium\/precision.jpg": {
 		"ft": 16384,
 		"iS": 141498,
@@ -1205,7 +1285,7 @@
 		"oAP": "\/_images\/medium\/rsg.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/medium\/sef.jpg": {
@@ -1225,7 +1305,7 @@
 		"oAP": "\/_images\/medium\/simply-people.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/medium\/skulls.jpg": {
@@ -1263,6 +1343,16 @@
 		"iS": 0,
 		"oA": 0,
 		"oAP": "\/_images\/medium\/symphony.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/medium\/tnrmt.jpg": {
+		"ft": 16384,
+		"iS": 67375,
+		"oA": 0,
+		"oAP": "\/_images\/medium\/tnrmt.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1588,6 +1678,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_images\/small\/petrelli.jpg": {
+		"ft": 16384,
+		"iS": 49849,
+		"oA": 0,
+		"oAP": "\/_images\/small\/petrelli.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_images\/small\/precision.jpg": {
 		"ft": 16384,
 		"iS": 45963,
@@ -1605,7 +1705,7 @@
 		"oAP": "\/_images\/small\/rsg.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/small\/sef.jpg": {
@@ -1625,7 +1725,7 @@
 		"oAP": "\/_images\/small\/simply-people.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/small\/skulls.jpg": {
@@ -1673,6 +1773,16 @@
 		"iS": 94592,
 		"oA": 0,
 		"oAP": "\/_images\/small\/symphony.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/small\/tnrmt.jpg": {
+		"ft": 16384,
+		"iS": 22226,
+		"oA": 0,
+		"oAP": "\/_images\/small\/tnrmt.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1886,6 +1996,16 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"\/_images\/square-tnrmt.jpg": {
+		"ft": 16384,
+		"iS": 32736,
+		"oA": 0,
+		"oAP": "\/_images\/square-tnrmt.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/_images\/tall-ccm.jpg": {

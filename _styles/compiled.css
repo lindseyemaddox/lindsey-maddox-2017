@@ -576,9 +576,8 @@ iframe {
 }
 .subpage.evidencepage .info {
   background: #565656;
-  height: 100%;
   opacity: 0.75;
-  padding: 5% 30px 1.65%;
+  padding: 5% 30px;
   position: absolute;
   right: 0;
   top: 0;
@@ -601,6 +600,11 @@ iframe {
   line-height: 1.25em;
   font-family: 'Quicksand', Arial, Helvetica, sans-serif;
   font-weight: 300;
+}
+.subpage.evidencepage .info .button {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
 }
 .subpage.animate-bg {
   padding-top: 20px;
@@ -1006,6 +1010,7 @@ iframe {
 }
 .fancybox-inner picture,
 .fancybox-inner img {
+  max-width: 1000px;
   width: 100%;
 }
 .fancybox-type-iframe .fancybox-inner {
