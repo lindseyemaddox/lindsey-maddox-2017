@@ -1375,7 +1375,7 @@
 		"oAP": "\/_images\/rect-aids.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/rect-cirrus.jpg": {
@@ -1385,7 +1385,17 @@
 		"oAP": "\/_images\/rect-cirrus.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/_images\/rect-dykes.jpg": {
+		"ft": 16384,
+		"iS": 28966,
+		"oA": 0,
+		"oAP": "\/_images\/rect-dykes.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/rect-specialolympics.jpg": {
@@ -1395,7 +1405,7 @@
 		"oAP": "\/_images\/rect-specialolympics.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/rect-travismeadows.jpg": {
@@ -1405,7 +1415,7 @@
 		"oAP": "\/_images\/rect-travismeadows.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/rect-watkins.jpg": {
@@ -1715,7 +1725,7 @@
 		"oAP": "\/_images\/square-angryeagle.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/square-bkon.jpg": {
@@ -1725,7 +1735,7 @@
 		"oAP": "\/_images\/square-bkon.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/square-connico.jpg": {
@@ -1735,7 +1745,7 @@
 		"oAP": "\/_images\/square-connico.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/square-fasterfitness.jpg": {
@@ -1745,7 +1755,7 @@
 		"oAP": "\/_images\/square-fasterfitness.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/square-inquicker.jpg": {
@@ -1755,7 +1765,7 @@
 		"oAP": "\/_images\/square-inquicker.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/square-kenricks.jpg": {
@@ -1765,7 +1775,7 @@
 		"oAP": "\/_images\/square-kenricks.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/square-longhaul.jpg": {
@@ -1775,7 +1785,7 @@
 		"oAP": "\/_images\/square-longhaul.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/square-neighborhoodhealth.jpg": {
@@ -1785,7 +1795,7 @@
 		"oAP": "\/_images\/square-neighborhoodhealth.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/square-oceano.jpg": {
@@ -1795,7 +1805,7 @@
 		"oAP": "\/_images\/square-oceano.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/square-peg.jpg": {
@@ -1805,7 +1815,7 @@
 		"oAP": "\/_images\/square-peg.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/square-precision.jpg": {
@@ -1815,7 +1825,7 @@
 		"oAP": "\/_images\/square-precision.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/square-readysetgo.jpg": {
@@ -1825,7 +1835,7 @@
 		"oAP": "\/_images\/square-readysetgo.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/square-sef.jpg": {
@@ -1835,7 +1845,7 @@
 		"oAP": "\/_images\/square-sef.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/square-skulls.jpg": {
@@ -1845,7 +1855,7 @@
 		"oAP": "\/_images\/square-skulls.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/square-sounds.jpg": {
@@ -1855,7 +1865,7 @@
 		"oAP": "\/_images\/square-sounds.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/square-symphony.jpg": {
@@ -1865,7 +1875,7 @@
 		"oAP": "\/_images\/square-symphony.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/tall-ccm.jpg": {
@@ -1875,7 +1885,7 @@
 		"oAP": "\/_images\/tall-ccm.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/tall-coffeelunch.jpg": {
@@ -1885,7 +1895,7 @@
 		"oAP": "\/_images\/tall-coffeelunch.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/tall-inquicker.jpg": {
@@ -1895,7 +1905,7 @@
 		"oAP": "\/_images\/tall-inquicker.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/tall-martha.jpg": {
@@ -1905,7 +1915,7 @@
 		"oAP": "\/_images\/tall-martha.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/tall-simplypeople.jpg": {
@@ -1925,7 +1935,7 @@
 		"oAP": "\/_images\/tall-tsu.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/tall-tuba.jpg": {
@@ -1935,7 +1945,7 @@
 		"oAP": "\/_images\/tall-tuba.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_includes\/head.jade": {
