@@ -1788,6 +1788,16 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/_images\/square-martha.jpg": {
+		"ft": 16384,
+		"iS": 13352,
+		"oA": 0,
+		"oAP": "\/_images\/square-martha.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_images\/square-neighborhoodhealth.jpg": {
 		"ft": 16384,
 		"iS": 7293,

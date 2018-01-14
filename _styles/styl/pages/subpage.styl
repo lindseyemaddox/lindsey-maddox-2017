@@ -188,7 +188,7 @@
       position: absolute
       text-align: center
       text-transform: uppercase
-      top: 10%
+      top: 20%
       width: 100%
 
     .button
@@ -196,7 +196,6 @@
       border: 0
       bottom: 20%
       margin: 0 10%
-      opacity: 0
       position: absolute
       text-align: center
       width: 80%
@@ -255,22 +254,20 @@
 
     .gallery-item
       background: $black
-      clear(both)
       color: $white
-      float: left
-      height: auto
-      overflow: hidden
-      padding: 0
-      position: relative
       width: 20%
 
       &.rect
+        max-width: 638px
         width: 40%
 
       > *
         margin: 0
         padding: 0
         text-decoration: none
+
+      .button
+        opacity: 0
 
       a:hover
         transition: margin 400ms ease-in
