@@ -5,10 +5,11 @@
     padding-top: 20px
 
   header
-    margin: 20px 0 80px -35px
+    margin: 20px 0 160px -35px
 
     nav
       float: left
+      position: relative
 
     a.logo
       display: inline-block
@@ -26,10 +27,10 @@
       vertical-align: middle
 
     ul
-      $primary-font($light)
       display: inline-block
       font-size: 1.125em
       letter-spacing: 0
+      $primary-font($light)
       vertical-align: middle
       width: auto
 
@@ -48,12 +49,21 @@
       display: none
 
   #socials
-    display: inline-block
-    vertical-align: -53px
+    height: auto
+    position: absolute
+    right: 0
+    text-align: right
+    top: -100px
+    transition-property: top
+    width: 100%
+
+    &.expanded
+      height: auto
+      top: 0
 
     a
       font-size: 1em
-      padding: 0 15px
+      padding: 0 3.4%
 
   &.biopage
 
@@ -71,6 +81,7 @@
       font-weight: $bold
 
   .columns
+    clear: left
     display: block
     padding-bottom: 2em
 
