@@ -511,7 +511,7 @@
 		"oAP": "\/_images\/extramedium\/1_onboarding-dashboard.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/extramedium\/2_onboarding-modal-step1.jpg": {
@@ -1010,7 +1010,7 @@
 		"oAP": "\/_images\/large\/1_onboarding-dashboard.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/large\/2_onboarding-modal-step1.jpg": {
@@ -2586,6 +2586,16 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"\/_images\/square-phy.jpg": {
+		"ft": 16384,
+		"iS": 11835,
+		"oA": 0,
+		"oAP": "\/_images\/square-phy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/_images\/square-precision.jpg": {
