@@ -174,6 +174,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_images\/extralarge\/bags.jpg": {
+		"ft": 16384,
+		"iS": 443505,
+		"oA": 0,
+		"oAP": "\/_images\/extralarge\/bags.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_images\/extralarge\/bg.jpg": {
 		"ft": 16384,
 		"iS": 0,
@@ -612,6 +622,16 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"\/_images\/extramedium\/bags.jpg": {
+		"ft": 16384,
+		"iS": 152918,
+		"oA": 0,
+		"oAP": "\/_images\/extramedium\/bags.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/_images\/extramedium\/bg.jpg": {
@@ -1113,6 +1133,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_images\/large\/bags.jpg": {
+		"ft": 16384,
+		"iS": 317803,
+		"oA": 0,
+		"oAP": "\/_images\/large\/bags.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_images\/large\/bg.jpg": {
 		"ft": 16384,
 		"iS": 109050,
@@ -1525,7 +1555,7 @@
 		"oAP": "\/_images\/medium\/1_onboarding-dashboard.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/medium\/2_onboarding-modal-step1.jpg": {
@@ -1623,6 +1653,16 @@
 		"iS": 4344,
 		"oA": 0,
 		"oAP": "\/_images\/medium\/angryeagle.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/medium\/bags.jpg": {
+		"ft": 16384,
+		"iS": 49487,
+		"oA": 0,
+		"oAP": "\/_images\/medium\/bags.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2085,7 +2125,7 @@
 		"oAP": "\/_images\/small\/1_onboarding-dashboard.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_images\/small\/2_onboarding-modal-step1.jpg": {
@@ -2183,6 +2223,16 @@
 		"iS": 49279,
 		"oA": 0,
 		"oAP": "\/_images\/small\/angryeagle.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/small\/bags.jpg": {
+		"ft": 16384,
+		"iS": 16778,
+		"oA": 0,
+		"oAP": "\/_images\/small\/bags.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2835,6 +2885,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/_scripts\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/_scripts\/picturefill.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_scripts\/picturefill-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
