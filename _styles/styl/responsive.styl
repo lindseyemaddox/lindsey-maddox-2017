@@ -4,6 +4,7 @@ html
     @media (max-width: (i*100)px)
       font-size: 10.5px+(i/2)
 
+
 @media screen and (max-width: 1100px)
   .grid
     margin: 0 10%
@@ -19,11 +20,6 @@ html
 
 
 @media screen and (max-width: 700px)
-  #socials a
-    font-size: 1.5em
-
-
-@media screen and (max-width: 600px)
   header
     nav
       p.home
@@ -32,13 +28,28 @@ html
       p.subhead
         font-size: 1.56em
 
+      hr
+        border: none
+        border-top: 1px solid $white
+        padding-bottom: 30px
+
       ul
         li
           display: block
           padding: 20px
 
+          &:last-child
+            padding-bottom: 40px
+
   #socials a
+    font-size: 1.5em
     padding: 0 20px
+
+
+@media screen and (max-width: 600px)
+  #socials a
+    padding: 0 15px
+
 
 @media screen and (max-width: 500px)
   header
@@ -49,8 +60,9 @@ html
       p.subhead
         font-size: 1.22em
 
-  #socials a
-    padding: 0 15px
+  #socials a.icon-codepen
+    display: none
+
 
 @media screen and (max-width: 400px)
   header
